@@ -1,0 +1,14 @@
+include $(LOCAL_PATH)/rtcmix/insts/joel/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/base/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/bgg/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/jg/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/std/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/stk/sources.mk
+include $(LOCAL_PATH)/rtcmix/insts/android/sources.mk
+
+#LOCAL_MODULE    := gen
+#LOCAL_CFLAGS	:= -Werror
+#LOCAL_C_INCLUDES:= $(LOCAL_PATH)/rtcmix/include
+#LOCAL_C_INCLUDES += $(LOCAL_PATH)/rtcmix/genlib
+#LOCAL_SRC_FILES += $(SOURCES:%=rtcmix/genlib/%)
+

@@ -1,0 +1,5 @@
+LOCAL_MODULE    := tuning
+LOCAL_CFLAGS	:= -Werror
+LOCAL_C_INCLUDES:= $(LOCAL_PATH)/include
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/genlib
+LOCAL_SRC_FILES := tuning.c
