@@ -9,6 +9,7 @@
 #include <bus.h>
 #include <rt_types.h>
 #include <sys/types.h>
+#include <pthread.h>
 
 // BGG mm -- added this for mm_buf
 #include "rtdefs.h"

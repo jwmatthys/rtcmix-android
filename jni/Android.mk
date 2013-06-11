@@ -17,7 +17,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := rtcmix
-#LOCAL_CFLAGS	:= -g -O2
+LOCAL_CFLAGS	:= -g -O2
 
 include $(LOCAL_PATH)/genlib/sources.mk
 include $(LOCAL_PATH)/insts/sources.mk

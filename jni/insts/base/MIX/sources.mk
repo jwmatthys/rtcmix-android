@@ -1,9 +1,8 @@
 include $(CLEAR_VARS)
-THIS_PATH := $(call my-dir)
-LOCAL_MODULE    := jfuncs
+LOCAL_MODULE    := MIX
 LOCAL_CFLAGS	:= -Werror
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/include
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/genlib
 LOCAL_STATIC_LIBRARIES := gen
-LOCAL_SRC_FILES := $(THIS_PATH)/jfuncs.c
-include $(BUILD_SHARED_LIBRARY)
+LOCAL_SRC_FILES := insts/base/MIX/MIX.cpp
+include $(BUILD_STATIC_LIBRARY)
