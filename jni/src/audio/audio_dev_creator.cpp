@@ -6,28 +6,8 @@
 // to build based on the passed-in descriptor.
 
 #include <ugens.h>
-
-#ifdef LINUX
-#include "SinglePortOSSAudioDevice.h"
-#include "MultiPortOSSAudioDevice.h"
+#include <stdio.h>
 #include "TestAudioDevice.h"
-#endif
-#ifdef ALSA
-#include "ALSAAudioDevice.h"
-#endif
-#ifdef NETAUDIO
-#include "NetAudioDevice.h"
-#endif
-#ifdef MACOSX
-#include "OSXAudioDevice.h"
-#endif
-#ifdef SGI
-#include "SGIAudioDevice.h"
-#endif
-#ifdef JACK
-#include "JackAudioDevice.h"
-#endif
-
 #include "AudioIODevice.h"
 
 typedef AudioDevice * (*CreatorFun)(const char *, const char *, int mode);

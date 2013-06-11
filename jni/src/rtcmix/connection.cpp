@@ -18,10 +18,6 @@
 
 #include "DynamicLib.h"
 
-#if !defined(SHAREDLIBDIR)
-#error "Compile flags are missing macro for SHAREDLIBDIR"
-#endif
-
 // =============================================================================
 // The remaining functions are public, callable from scripts.
 

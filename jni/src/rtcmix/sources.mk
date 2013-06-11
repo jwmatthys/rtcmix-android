@@ -1,6 +1,8 @@
 include $(CLEAR_VARS)
 
-source	:= $(wildcard $(LOCAL_PATH)/src/rtcmix/gen/*.c)
+source	:= $(wildcard $(LOCAL_PATH)/src/sndlib/*.c)
+source	+= $(wildcard $(LOCAL_PATH)/src/audio/*.cpp)
+source	+= $(wildcard $(LOCAL_PATH)/src/rtcmix/gen/*.c)
 source	+= $(wildcard $(LOCAL_PATH)/src/rtcmix/heap/*.cpp)
 source	+= $(wildcard $(LOCAL_PATH)/src/rtcmix/*.c)
 source	+= $(wildcard $(LOCAL_PATH)/src/rtcmix/*.cpp)
