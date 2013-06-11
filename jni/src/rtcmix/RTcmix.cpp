@@ -178,7 +178,7 @@ RTcmix::init_globals(bool fromMain, const char *defaultDSOPath)
    if (Option::autoLoad()) {
       const char *dsoPath = Option::dsoPath();
       if (strlen(dsoPath) == 0)
-         registerDSOs(SHAREDLIBDIR);
+	registerDSOs(SHAREDLIBDIR);
       else
          registerDSOs(dsoPath);
    }

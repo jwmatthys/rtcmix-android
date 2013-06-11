@@ -20,5 +20,5 @@ LOCAL_MODULE    := rtcmix
 LOCAL_CFLAGS	:= -g -O2
 
 include $(LOCAL_PATH)/genlib/sources.mk
-include $(LOCAL_PATH)/insts/sources.mk
+include $(LOCAL_PATH)/src/rtcmix/sources.mk
 #include $(BUILD_SHARED_LIBRARY)

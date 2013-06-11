@@ -6,17 +6,7 @@
 #ifndef _SNDLIB_SUPPORT_H_
 #define _SNDLIB_SUPPORT_H_
 
-#if defined(LINUX)
 #include <endian.h>      /* so that sndlib.h will get host byte-order right */
-#elif defined(MACOSX)
-#include <machine/endian.h>
-#elif defined(SGI)
-#include <sys/endian.h>
-#elif defined(FREEBSD)
-#include <machine/endian.h>
-#else
-#error "This platform is not supported by sndlibsupport.h"
-#endif
 #include <stdio.h>          /* for FILE, needed by sndlib.h */
 #include <sndlib.h>
 #include <sfheader.h>       /* for SFHEADER */

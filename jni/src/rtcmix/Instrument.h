@@ -9,6 +9,8 @@
 #include <bus.h>
 #include <rt_types.h>
 #include <sys/types.h>
+// JWM - add pthread for ARM compilation
+#include <pthread.h>
 
 // BGG mm -- added this for mm_buf
 #include "rtdefs.h"
