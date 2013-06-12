@@ -6,6 +6,7 @@
 #ifndef _SNDLIB_SUPPORT_H_
 #define _SNDLIB_SUPPORT_H_
 
+// JWM: Android NDK should use Linux endianness, right?
 #include <endian.h>      /* so that sndlib.h will get host byte-order right */
 #include <stdio.h>          /* for FILE, needed by sndlib.h */
 #include <sndlib.h>

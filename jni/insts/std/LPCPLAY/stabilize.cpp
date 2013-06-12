@@ -1,6 +1,6 @@
 // stabilize.C
 
-#include <Complex.h>
+#include "Complex.h"
 #include <iostream>
 #include "lp.h"
 

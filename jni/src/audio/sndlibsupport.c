@@ -1255,7 +1255,7 @@ err:
 /* ========================================================================== */
 /* compatibility functions for disk-based cmix to read and write headers */
 
-#ifdef CMIX_LEGACY
+//#ifdef CMIX_LEGACY
 
 static int peak_stats_to_sfmaxamp(SFMAXAMP *, SFComment *, int);
 static int sfmaxamp_to_peak_stats(SFComment *, SFMAXAMP *, int);
@@ -1678,5 +1678,4 @@ sf_class_to_data_format(int class, int header_type)
 }
 
 
-#endif /* CMIX_LEGACY */
-
+//#endif /* CMIX_LEGACY */

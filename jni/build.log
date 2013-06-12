@@ -1,0 +1,462 @@
+/home/jwmatthys/android/android-ndk-r8e/build/core/add-application.mk:128: Android NDK: WARNING: APP_PLATFORM android-9 is larger than android:minSdkVersion 3 in /home/jwmatthys/android/rtcmix-android/AndroidManifest.xml    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+Gdbsetup       : libs/armeabi/gdb.setup
+Compile++ thumb  : rtcmix <= addcheckfunc.cpp
+Compile++ thumb  : rtcmix <= addrtInst.cpp
+Compile++ thumb  : rtcmix <= buffers.cpp
+Compile++ thumb  : rtcmix <= bus_config.cpp
+Compile++ thumb  : rtcmix <= checkInsts.cpp
+Compile++ thumb  : rtcmix <= dispatch.cpp
+Compile++ thumb  : rtcmix <= filter.cpp
+Compile++ thumb  : rtcmix <= Instrument.cpp
+Compile++ thumb  : rtcmix <= intraverse.cpp
+Compile++ thumb  : rtcmix <= loader.cpp
+Compile++ thumb  : rtcmix <= lfo.cpp
+Compile++ thumb  : rtcmix <= minc_info.cpp
+Compile++ thumb  : rtcmix <= DataFile.cpp
+Compile++ thumb  : rtcmix <= mm_rtsetparams.cpp
+Compile++ thumb  : rtcmix <= Option.cpp
+Compile++ thumb  : rtcmix <= PField.cpp
+Compile++ thumb  : rtcmix <= PFieldSet.cpp
+Compile++ thumb  : rtcmix <= Random.cpp
+Compile++ thumb  : rtcmix <= RefCounted.cpp
+Compile++ thumb  : rtcmix <= RTcmix.cpp
+Compile++ thumb  : rtcmix <= rtcmix_types.cpp
+Compile++ thumb  : rtcmix <= rtcmix_wrappers.cpp
+Compile++ thumb  : rtcmix <= rtgetin.cpp
+Compile++ thumb  : rtcmix <= rtgetsamps.cpp
+Compile++ thumb  : rtcmix <= rtinput.cpp
+Compile++ thumb  : rtcmix <= rtoutput.cpp
+Compile++ thumb  : rtcmix <= rtprofile.cpp
+Compile++ thumb  : rtcmix <= rtsendsamps.cpp
+Compile++ thumb  : rtcmix <= rtsetinput.cpp
+Compile++ thumb  : rtcmix <= rtsetoutput.cpp
+Compile++ thumb  : rtcmix <= rtsetparams.cpp
+Compile++ thumb  : rtcmix <= rtwritesamps.cpp
+Compile++ thumb  : rtcmix <= set_option.cpp
+Compile++ thumb  : rtcmix <= table.cpp
+Compile++ thumb  : rtcmix <= tableutils.cpp
+Compile++ thumb  : rtcmix <= modtable.cpp
+Compile++ thumb  : rtcmix <= ops.cpp
+Compile++ thumb  : rtcmix <= utils.cpp
+Compile++ thumb  : rtcmix <= rt_ug_intro.cpp
+Compile++ thumb  : rtcmix <= connection.cpp
+Compile++ thumb  : rtcmix <= converter.cpp
+Compile++ thumb  : rtcmix <= monitor.cpp
+Compile thumb  : rtcmix <= check_byte_order.c
+Compile thumb  : rtcmix <= command_line.c
+Compile thumb  : rtcmix <= funderflow.c
+Compile thumb  : rtcmix <= getsample.c
+Compile thumb  : rtcmix <= infile.c
+Compile thumb  : rtcmix <= io.c
+Compile thumb  : rtcmix <= load_utils.c
+Compile thumb  : rtcmix <= merror.c
+Compile thumb  : rtcmix <= message.c
+Compile thumb  : rtcmix <= minc_functions.c
+Compile thumb  : rtcmix <= minout.c
+Compile thumb  : rtcmix <= m_system.c
+Compile thumb  : rtcmix <= printsf.c
+Compile thumb  : rtcmix <= profile.c
+Compile thumb  : rtcmix <= resetamp.c
+Compile thumb  : rtcmix <= sampfunc.c
+Compile thumb  : rtcmix <= sfcopy.c
+Compile thumb  : rtcmix <= sfprint.c
+Compile thumb  : rtcmix <= sfstats.c
+Compile thumb  : rtcmix <= sound.c
+Compile thumb  : rtcmix <= soundio.c
+Compile thumb  : rtcmix <= tempo.c
+Compile thumb  : rtcmix <= ug_intro.c
+Compile thumb  : rtcmix <= fdump.c
+Compile thumb  : rtcmix <= floc.c
+Compile thumb  : rtcmix <= fnscl.c
+Compile thumb  : rtcmix <= fplot.c
+Compile thumb  : rtcmix <= fsize.c
+Compile thumb  : rtcmix <= gen10.c
+Compile thumb  : rtcmix <= gen17.c
+Compile thumb  : rtcmix <= gen18.c
+Compile thumb  : rtcmix <= gen1.c
+Compile thumb  : rtcmix <= gen20.c
+Compile thumb  : rtcmix <= gen24.c
+Compile thumb  : rtcmix <= gen25.c
+Compile thumb  : rtcmix <= gen2.c
+Compile thumb  : rtcmix <= gen3.c
+Compile thumb  : rtcmix <= gen4.c
+Compile thumb  : rtcmix <= gen5.c
+Compile thumb  : rtcmix <= gen6.c
+Compile thumb  : rtcmix <= gen7.c
+Compile thumb  : rtcmix <= gen9.c
+Compile thumb  : rtcmix <= makegen.c
+Compile thumb  : rtcmix <= modgens.c
+Compile++ thumb  : rtcmix <= MIX.cpp
+Compile++ thumb  : rtcmix <= WAVETABLE.cpp
+Compile++ thumb  : rtcmix <= AM.cpp
+Compile++ thumb  : rtcmix <= AMINST.cpp
+Compile++ thumb  : rtcmix <= CLAR.cpp
+Compile thumb  : rtcmix <= cfuncs.c
+Compile++ thumb  : rtcmix <= COMBIT.cpp
+Compile++ thumb  : rtcmix <= DEL1.cpp
+Compile++ thumb  : rtcmix <= DELAY.cpp
+Compile++ thumb  : rtcmix <= FIR.cpp
+Compile++ thumb  : rtcmix <= FMINST.cpp
+Compile++ thumb  : rtcmix <= HOLO.cpp
+Compile++ thumb  : rtcmix <= BUZZ.cpp
+Compile++ thumb  : rtcmix <= INPUTSIG.cpp
+Compile++ thumb  : rtcmix <= NOISE.cpp
+Compile++ thumb  : rtcmix <= PULSE.cpp
+Compile thumb  : rtcmix <= cfuncs.c
+Compile++ thumb  : rtcmix <= Complex.cpp
+Compile++ thumb  : rtcmix <= DataSet.cpp
+Compile++ thumb  : rtcmix <= LPCPLAY.cpp
+Compile thumb  : rtcmix <= bmultf.c
+Compile thumb  : rtcmix <= buzz.c
+Compile thumb  : rtcmix <= lpcheader.c
+Compile thumb  : rtcmix <= rand.c
+Compile++ thumb  : rtcmix <= setup.cpp
+Compile thumb  : rtcmix <= shift.c
+Compile++ thumb  : rtcmix <= stabilize.cpp
+Compile++ thumb  : rtcmix <= SGRANR.cpp
+Compile++ thumb  : rtcmix <= STGRANR.cpp
+Compile++ thumb  : rtcmix <= BSFLUTE.cpp
+Compile++ thumb  : rtcmix <= LSFLUTE.cpp
+Compile++ thumb  : rtcmix <= SFLUTE.cpp
+Compile++ thumb  : rtcmix <= VSFLUTE.cpp
+Compile++ thumb  : rtcmix <= BASE.cpp
+Compile++ thumb  : rtcmix <= MOVE.cpp
+Compile++ thumb  : rtcmix <= PLACE.cpp
+Compile thumb  : rtcmix <= cmixfuns.c
+Compile++ thumb  : rtcmix <= common.cpp
+Compile thumb  : rtcmix <= path.c
+Compile thumb  : rtcmix <= setup.c
+Compile++ thumb  : rtcmix <= MOCKBEND.cpp
+Compile++ thumb  : rtcmix <= MULTICOMB.cpp
+Compile++ thumb  : rtcmix <= PANECHO.cpp
+Compile++ thumb  : rtcmix <= PHASER.cpp
+Compile++ thumb  : rtcmix <= PVFilter.cpp
+Compile++ thumb  : rtcmix <= PVOC.cpp
+Compile thumb  : rtcmix <= fft.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/fft.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile thumb  : rtcmix <= fold.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/fold.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile thumb  : rtcmix <= lpa.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/lpa.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile thumb  : rtcmix <= lpamp.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/lpamp.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile thumb  : rtcmix <= makewindows.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/makewindows.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile thumb  : rtcmix <= overlapadd.c
+In file included from /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/overlapadd.c:1:0:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:15:60: warning: conflicting types for built-in function 'csqrt' [enabled by default]
+Compile++ thumb  : rtcmix <= setup.cpp
+Compile++ thumb  : rtcmix <= REVMIX.cpp
+Compile++ thumb  : rtcmix <= SCRUB.cpp
+Compile++ thumb  : rtcmix <= SCULPT.cpp
+Compile++ thumb  : rtcmix <= STEREO.cpp
+Compile++ thumb  : rtcmix <= BEND.cpp
+Compile++ thumb  : rtcmix <= BEND1.cpp
+Compile++ thumb  : rtcmix <= FRET.cpp
+Compile++ thumb  : rtcmix <= FRET1.cpp
+Compile++ thumb  : rtcmix <= START.cpp
+Compile++ thumb  : rtcmix <= START1.cpp
+Compile++ thumb  : rtcmix <= VFRET1.cpp
+Compile++ thumb  : rtcmix <= VSTART1.cpp
+Compile thumb  : rtcmix <= delay.c
+Compile thumb  : rtcmix <= delayclean.c
+Compile thumb  : rtcmix <= delayset.c
+Compile thumb  : rtcmix <= dist.c
+Compile thumb  : rtcmix <= randfill.c
+Compile thumb  : rtcmix <= squisher.c
+Compile thumb  : rtcmix <= sset.c
+Compile thumb  : rtcmix <= strum.c
+Compile++ thumb  : rtcmix <= STRUM2.cpp
+Compile++ thumb  : rtcmix <= STRUMFB.cpp
+Compile++ thumb  : rtcmix <= TRANS.cpp
+Compile++ thumb  : rtcmix <= TRANS3.cpp
+Compile++ thumb  : rtcmix <= TRANSBEND.cpp
+Compile++ thumb  : rtcmix <= WAVESHAPE.cpp
+Compile++ thumb  : rtcmix <= BUTTER.cpp
+Compile++ thumb  : rtcmix <= COMPLIMIT.cpp
+Compile++ thumb  : rtcmix <= CONVOLVE1.cpp
+Compile++ thumb  : rtcmix <= DCBLOCK.cpp
+Compile++ thumb  : rtcmix <= DECIMATE.cpp
+Compile++ thumb  : rtcmix <= DISTORT.cpp
+Compile++ thumb  : rtcmix <= ELL.cpp
+Compile thumb  : rtcmix <= ellipse.c
+Compile thumb  : rtcmix <= setell.c
+Compile++ thumb  : rtcmix <= EQ.cpp
+Compile++ thumb  : rtcmix <= FILTERBANK.cpp
+Compile++ thumb  : rtcmix <= FILTSWEEP.cpp
+Compile++ thumb  : rtcmix <= FLANGE.cpp
+Compile++ thumb  : rtcmix <= FOLLOWBUTTER.cpp
+Compile++ thumb  : rtcmix <= FOLLOWER.cpp
+Compile++ thumb  : rtcmix <= FOLLOWER_BASE.cpp
+Compile++ thumb  : rtcmix <= FOLLOWGATE.cpp
+Compile++ thumb  : rtcmix <= FREEVERB.cpp
+Compile++ thumb  : rtcmix <= allpass.cpp
+Compile++ thumb  : rtcmix <= comb.cpp
+Compile++ thumb  : rtcmix <= delay.cpp
+Compile++ thumb  : rtcmix <= revmodel.cpp
+Compile++ thumb  : rtcmix <= GRANSYNTH.cpp
+Compile++ thumb  : rtcmix <= synthgrainstream.cpp
+Compile++ thumb  : rtcmix <= synthgrainvoice.cpp
+Compile++ thumb  : rtcmix <= JCHOR.cpp
+Compile++ thumb  : rtcmix <= JDELAY.cpp
+Compile++ thumb  : rtcmix <= JFIR.cpp
+Compile++ thumb  : rtcmix <= JGRAN.cpp
+Compile++ thumb  : rtcmix <= MOOGVCF.cpp
+Compile++ thumb  : rtcmix <= MROOM.cpp
+Compile thumb  : rtcmix <= timeset.c
+Compile++ thumb  : rtcmix <= MULTEQ.cpp
+Compile++ thumb  : rtcmix <= MULTIWAVE.cpp
+Compile++ thumb  : rtcmix <= PAN.cpp
+Compile++ thumb  : rtcmix <= REV.cpp
+Compile++ thumb  : rtcmix <= REVERBIT.cpp
+Compile++ thumb  : rtcmix <= ROOM.cpp
+Compile thumb  : rtcmix <= roomset.c
+Compile++ thumb  : rtcmix <= SHAPE.cpp
+Compile++ thumb  : rtcmix <= SPECTACLE.cpp
+Compile++ thumb  : rtcmix <= SPECTACLE_BASE.cpp
+Compile++ thumb  : rtcmix <= SPECTEQ.cpp
+Compile++ thumb  : rtcmix <= TVSPECTACLE.cpp
+Compile thumb  : rtcmix <= fft.c
+Compile++ thumb  : rtcmix <= SPECTACLE2.cpp
+Compile++ thumb  : rtcmix <= SPECTACLE2_BASE.cpp
+Compile++ thumb  : rtcmix <= SPECTEQ2.cpp
+Compile++ thumb  : rtcmix <= SPLITTER.cpp
+Compile++ thumb  : rtcmix <= VOCODE2.cpp
+Compile++ thumb  : rtcmix <= VOCODE3.cpp
+Compile++ thumb  : rtcmix <= VOCODESYNTH.cpp
+Compile++ thumb  : rtcmix <= WAVY.cpp
+Compile++ thumb  : rtcmix <= fparser.cc
+Compile++ thumb  : rtcmix <= WIGGLE.cpp
+Compile++ thumb  : rtcmix <= MBANDEDWG.cpp
+Compile++ thumb  : rtcmix <= MBLOWBOTL.cpp
+Compile++ thumb  : rtcmix <= MBLOWHOLE.cpp
+Compile++ thumb  : rtcmix <= MBOWED.cpp
+Compile++ thumb  : rtcmix <= MBRASS.cpp
+Compile++ thumb  : rtcmix <= MCLAR.cpp
+Compile++ thumb  : rtcmix <= MMESH2D.cpp
+Compile++ thumb  : rtcmix <= MMODALBAR.cpp
+Compile++ thumb  : rtcmix <= MSAXOFONY.cpp
+Compile++ thumb  : rtcmix <= MSHAKERS.cpp
+Compile++ thumb  : rtcmix <= MSITAR.cpp
+Compile++ thumb  : rtcmix <= MAXBANG.cpp
+Compile++ thumb  : rtcmix <= MAXMESSAGE.cpp
+Compile++ thumb  : rtcmix <= GVERB.cpp
+Compile++ thumb  : rtcmix <= gverbdsp.cpp
+Compile++ thumb  : rtcmix <= HALFWAVE.cpp
+Compile++ thumb  : rtcmix <= PFSCHED.cpp
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.cpp: In member function 'virtual int PFSCHED::run()':
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.cpp:137:12: warning: converting to non-pointer type 'int' from NULL [-Wconversion-null]
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.cpp:142:12: warning: converting to non-pointer type 'int' from NULL [-Wconversion-null]
+Compile++ thumb  : rtcmix <= SYNC.cpp
+Compile++ thumb  : rtcmix <= VWAVE.cpp
+Compile thumb  : rtcmix <= jfuncs.c
+Compile thumb  : rtcmix <= tuning.c
+Compile++ thumb  : rtcmix <= audio_devices.cpp
+Compile++ thumb  : rtcmix <= RTcmixMain.cpp
+Compile++ thumb  : rtcmix <= main.cpp
+Compile thumb  : rtcmix <= parse_with_minc.c
+Compile thumb  : snd <= headers.c
+Compile thumb  : snd <= io.c
+Compile thumb  : snd <= extra.c
+StaticLibrary  : libsnd.a
+Compile thumb  : gen <= allpass.c
+Compile thumb  : gen <= allpole.c
+Compile thumb  : gen <= ampdb.c
+Compile thumb  : gen <= ballpole.c
+Compile thumb  : gen <= bbuzz.c
+Compile thumb  : gen <= boost.c
+Compile thumb  : gen <= boscili.c
+Compile thumb  : gen <= bpluck.c
+Compile thumb  : gen <= breson.c
+Compile thumb  : gen <= brrand.c
+Compile thumb  : gen <= buzz.c
+Compile thumb  : gen <= comb.c
+Compile thumb  : gen <= combset.c
+Compile thumb  : gen <= delget.c
+Compile thumb  : gen <= delput.c
+Compile thumb  : gen <= delset.c
+Compile thumb  : gen <= dliget.c
+Compile thumb  : gen <= evp.c
+Compile thumb  : gen <= evset.c
+Compile thumb  : gen <= hcomb.c
+Compile thumb  : gen <= hplset.c
+Compile thumb  : gen <= hpluck.c
+Compile thumb  : gen <= oscil.c
+Compile thumb  : gen <= oscili.c
+Compile thumb  : gen <= osciln.c
+Compile thumb  : gen <= oscilni.c
+Compile thumb  : gen <= pitchconv.c
+Compile thumb  : gen <= pluck.c
+Compile thumb  : gen <= pluckset.c
+Compile thumb  : gen <= randf.c
+Compile thumb  : gen <= randfuncs.c
+Compile thumb  : gen <= random.c
+Compile thumb  : gen <= reson.c
+Compile thumb  : gen <= resonz.c
+Compile thumb  : gen <= reverb.c
+Compile thumb  : gen <= rrand.c
+Compile thumb  : gen <= rsnset.c
+Compile thumb  : gen <= rvbset.c
+Compile thumb  : gen <= setline.c
+Compile thumb  : gen <= spray.c
+Compile thumb  : gen <= table.c
+Compile thumb  : gen <= tablei.c
+Compile thumb  : gen <= tableset.c
+Compile thumb  : gen <= wshape.c
+Compile++ thumb  : gen <= FFTReal.cpp
+Compile++ thumb  : gen <= Oallpass.cpp
+Compile++ thumb  : gen <= Oallpassi.cpp
+Compile++ thumb  : gen <= Obalance.cpp
+Compile++ thumb  : gen <= Obucket.cpp
+Compile++ thumb  : gen <= Ocomb.cpp
+Compile++ thumb  : gen <= Ocombi.cpp
+Compile++ thumb  : gen <= Odcblock.cpp
+Compile++ thumb  : gen <= Odelay.cpp
+Compile++ thumb  : gen <= Odelayi.cpp
+Compile++ thumb  : gen <= Odistort.cpp
+Compile++ thumb  : gen <= Oequalizer.cpp
+Compile++ thumb  : gen <= Offt.cpp
+Compile++ thumb  : gen <= Oonepole.cpp
+Compile++ thumb  : gen <= Ooscil.cpp
+Compile++ thumb  : gen <= Ooscili.cpp
+Compile++ thumb  : gen <= Orand.cpp
+Compile++ thumb  : gen <= Oreson.cpp
+Compile++ thumb  : gen <= Orms.cpp
+Compile++ thumb  : gen <= Ortgetin.cpp
+Compile++ thumb  : gen <= Ostrum.cpp
+StaticLibrary  : libgen.a
+Compile++ thumb  : obj <= JGFilter.cpp
+Compile++ thumb  : obj <= JGOnePole.cpp
+Compile++ thumb  : obj <= TwoPole.cpp
+Compile++ thumb  : obj <= JGOneZero.cpp
+Compile++ thumb  : obj <= TwoZero.cpp
+Compile++ thumb  : obj <= NZero.cpp
+Compile++ thumb  : obj <= JGBiQuad.cpp
+Compile++ thumb  : obj <= Butter.cpp
+Compile++ thumb  : obj <= DCBlock.cpp
+Compile++ thumb  : obj <= RMS.cpp
+Compile++ thumb  : obj <= Balance.cpp
+Compile++ thumb  : obj <= DLineN.cpp
+Compile++ thumb  : obj <= DLineL.cpp
+Compile++ thumb  : obj <= DLineA.cpp
+Compile++ thumb  : obj <= Reverb.cpp
+Compile++ thumb  : obj <= PRCRev.cpp
+Compile++ thumb  : obj <= JCRev.cpp
+Compile++ thumb  : obj <= NRev.cpp
+Compile++ thumb  : obj <= Comb.cpp
+Compile++ thumb  : obj <= ZComb.cpp
+Compile++ thumb  : obj <= Notch.cpp
+Compile++ thumb  : obj <= ZNotch.cpp
+Compile++ thumb  : obj <= Allpass.cpp
+Compile++ thumb  : obj <= Envelope.cpp
+Compile++ thumb  : obj <= ADSR.cpp
+Compile++ thumb  : obj <= Oscil.cpp
+Compile++ thumb  : obj <= OscilN.cpp
+Compile++ thumb  : obj <= OscilL.cpp
+Compile++ thumb  : obj <= KOscilN.cpp
+Compile++ thumb  : obj <= TableN.cpp
+Compile++ thumb  : obj <= TableL.cpp
+Compile++ thumb  : obj <= JGNoise.cpp
+Compile++ thumb  : obj <= SubNoise.cpp
+Compile++ thumb  : obj <= SubNoiseL.cpp
+Compile++ thumb  : obj <= WavShape.cpp
+Compile++ thumb  : obj <= ZAllpass.cpp
+Compile++ thumb  : obj <= Equalizer.cpp
+StaticLibrary  : libobj.a
+Compile++ thumb  : rtaudio <= AudioDevice.cpp
+Compile++ thumb  : rtaudio <= AudioIODevice.cpp
+Compile++ thumb  : rtaudio <= AudioDeviceImpl.cpp
+Compile++ thumb  : rtaudio <= ThreadedAudioDevice.cpp
+Compile++ thumb  : rtaudio <= AudioOutputGroupDevice.cpp
+Compile++ thumb  : rtaudio <= DualOutputAudioDevice.cpp
+Compile++ thumb  : rtaudio <= AudioFileDevice.cpp
+Compile++ thumb  : rtaudio <= NetAudioDevice.cpp
+Compile++ thumb  : rtaudio <= audio_dev_creator.cpp
+Compile thumb  : rtaudio <= sndlibsupport.c
+Compile++ thumb  : rtaudio <= OSSAudioDevice.cpp
+Compile++ thumb  : rtaudio <= SinglePortOSSAudioDevice.cpp
+Compile++ thumb  : rtaudio <= MultiPortOSSAudioDevice.cpp
+Compile++ thumb  : rtaudio <= ALSAAudioDevice.cpp
+Compile++ thumb  : rtaudio <= TestAudioDevice.cpp
+StaticLibrary  : librtaudio.a
+Compile++ thumb  : stk <= Brass.cpp
+Compile++ thumb  : stk <= DelayA.cpp
+Compile++ thumb  : stk <= BiQuad.cpp
+Compile++ thumb  : stk <= Filter.cpp
+Compile++ thumb  : stk <= Stk.cpp
+Compile++ thumb  : stk <= PoleZero.cpp
+Compile++ thumb  : stk <= Instrmnt.cpp
+Compile++ thumb  : stk <= Delay.cpp
+Compile++ thumb  : stk <= DelayL.cpp
+Compile++ thumb  : stk <= Noise.cpp
+Compile++ thumb  : stk <= BowTabl.cpp
+Compile++ thumb  : stk <= BandedWG.cpp
+Compile++ thumb  : stk <= JetTabl.cpp
+Compile++ thumb  : stk <= BlowBotl.cpp
+Compile++ thumb  : stk <= ReedTabl.cpp
+Compile++ thumb  : stk <= OneZero.cpp
+Compile++ thumb  : stk <= BlowHole.cpp
+Compile++ thumb  : stk <= OnePole.cpp
+Compile++ thumb  : stk <= Bowed.cpp
+Compile++ thumb  : stk <= Clarinet.cpp
+Compile++ thumb  : stk <= Flute.cpp
+Compile++ thumb  : stk <= Modal.cpp
+Compile++ thumb  : stk <= ModalBar.cpp
+Compile++ thumb  : stk <= Mesh2D.cpp
+Compile++ thumb  : stk <= Saxofony.cpp
+Compile++ thumb  : stk <= Shakers.cpp
+Compile++ thumb  : stk <= Sitar.cpp
+StaticLibrary  : libstk.a
+Compile++ thumb  : conf <= conf.tab.cpp
+In file included from conf.ypp:12:0:
+conf.l: In function 'int conflex(YYSTYPE*)':
+conf.l:44:30: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+conf.tab.cpp: In function 'int confparse(void*)':
+conf.tab.cpp:1586:35: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+conf.tab.cpp:1728:35: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Compile++ thumb  : conf <= Config.cpp
+StaticLibrary  : libconf.a
+Compile++ thumb  : inlet <= RTInletPField.cpp
+Compile++ thumb  : inlet <= inletglue.cpp
+StaticLibrary  : libinlet.a
+Compile++ thumb  : pfbus <= PFBusPField.cpp
+Compile++ thumb  : pfbus <= pfbusglue.cpp
+StaticLibrary  : libpfbus.a
+Compile thumb  : minc <= y.tab.c
+Compile thumb  : minc <= builtin.c
+Compile++ thumb  : minc <= callextfunc.cpp
+Compile thumb  : minc <= error.c
+Compile thumb  : minc <= sym.c
+Compile thumb  : minc <= trees.c
+Compile thumb  : minc <= utils.c
+Compile thumb  : minc <= handle.c
+StaticLibrary  : libminc.a
+Compile++ thumb  : rtheap <= heap.cpp
+Compile++ thumb  : rtheap <= queue.cpp
+Compile++ thumb  : rtheap <= rtQueue.cpp
+StaticLibrary  : librtheap.a
+SharedLibrary  : librtcmix.so
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/resetamp.o: in function resetamp:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/resetamp.c:39: error: undefined reference to 'putsfcode'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/resetamp.o: in function resetamp:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/resetamp.c:41: error: undefined reference to 'sndlib_wheader'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: in function sfstats:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfstats.c:24: error: undefined reference to 'sndlib_rheader'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: in function sfstats:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfstats.c:33: error: undefined reference to 'getsfcode'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: in function sfstats:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfstats.c:42: error: undefined reference to 'getsfcode'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function m_open:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:142: error: undefined reference to 'sndlib_rheader'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function m_open:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:156: error: undefined reference to 'getheadersize'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function endnote:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:741: error: undefined reference to 'sndlib_wheader'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function closesf:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:1003: error: undefined reference to 'putlength'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function closesf_noexit:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:1020: error: undefined reference to 'putlength'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function m_clean:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:1098: error: undefined reference to 'putsfcode'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: in function m_clean:/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c:1100: error: undefined reference to 'sndlib_wheader'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/CLAR/CLAR.o: in function CLAR::run():/home/jwmatthys/android/rtcmix-android/jni/insts/std/CLAR/CLAR.cpp:76: error: undefined reference to 'rtcmix_table'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/COMBIT/COMBIT.o: in function COMBIT::run():/home/jwmatthys/android/rtcmix-android/jni/insts/std/COMBIT/COMBIT.cpp:115: error: undefined reference to 'rtcmix_table'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/MOCKBEND/MOCKBEND.o: in function MOCKBEND::run():/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOCKBEND/MOCKBEND.cpp:191: error: undefined reference to 'rtcmix_table'
+/home/jwmatthys/android/android-ndk-r8e/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: /home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/MOCKBEND/MOCKBEND.o: in function MOCKBEND::run():/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOCKBEND/MOCKBEND.cpp:260: error: undefined reference to 'rtcmix_table'
+collect2: ld returned 1 exit status
+make: *** [/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/librtcmix.so] Error 1

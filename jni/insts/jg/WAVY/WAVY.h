@@ -2,7 +2,7 @@
 // software and for a DISCLAIMER OF ALL WARRANTIES.
 
 #include <Instrument.h>
-#include <fparser27/fparser.hh>
+#include "fparser27/fparser.hh"
 
 class Ooscil;
 

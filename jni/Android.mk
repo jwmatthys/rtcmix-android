@@ -16,9 +16,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-#LOCAL_MODULE    := rtcmix
-#LOCAL_CFLAGS	:= -g -O2
-
 # build libgen (libgen.a)
 include $(LOCAL_PATH)/genlib/sources.mk
 # build JG's objlib (now libobj.a)
@@ -39,7 +36,7 @@ include $(LOCAL_PATH)/src/control/maxmsp/sources.mk
 include $(LOCAL_PATH)/src/control/pfbus/sources.mk
 # build libminc (libminc.a)
 include $(LOCAL_PATH)/src/parser/minc/sources.mk
+# build librtheap (librtheap.a)
+include $(LOCAL_PATH)/src/rtcmix/heap/sources.mk
 
-# temporarily end with joel stuff which has no major deps
-# and forces static libraries to be built
-include $(LOCAL_PATH)/insts/joel/sources.mk
+include $(LOCAL_PATH)/rtcmix.mk
