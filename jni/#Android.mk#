@@ -17,7 +17,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 #LOCAL_MODULE    := rtcmix
-LOCAL_CPPFLAGS	:= -g -O2 -fexceptions
+#LOCAL_CFLAGS	:= -g -O2
 
 # build libgen (libgen.a)
 include $(LOCAL_PATH)/genlib/sources.mk
