@@ -16,9 +16,14 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := rtcmix
-LOCAL_CFLAGS	:= -g -O2
+#LOCAL_MODULE    := rtcmix
+#LOCAL_CFLAGS	:= -g -O2
 
+# build libgen
 include $(LOCAL_PATH)/genlib/sources.mk
-include $(LOCAL_PATH)/src/rtcmix/sources.mk
-#include $(BUILD_SHARED_LIBRARY)
+# build JG's objlib
+include $(LOCAL_PATH)/insts/jg/objlib/sources.mk
+
+# temporarily end with joel stuff which has no major deps
+# and forces static libraries to be built
+include $(LOCAL_PATH)/insts/joel/sources.mk
