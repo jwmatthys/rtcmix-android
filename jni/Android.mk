@@ -17,14 +17,24 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 #LOCAL_MODULE    := rtcmix
-LOCAL_CPPFLAGS	:= -g -O2 -fexceptions
+#LOCAL_CFLAGS	:= -g -O2
 
 # build libgen (libgen.a)
 include $(LOCAL_PATH)/genlib/sources.mk
 # build JG's objlib (now libobj.a)
 include $(LOCAL_PATH)/insts/jg/objlib/sources.mk
-# build JG's stklib (now libstk.a)
+# build stklib (now libstk.a)
 include $(LOCAL_PATH)/insts/stk/stklib/sources.mk
+# build librtaudio (libstk.a)
+include $(LOCAL_PATH)/src/audio/sources.mk
+# build sndlib (libsnd.a)
+include $(LOCAL_PATH)/src/sndlib/sources.mk
+# build libconf (libconf.a)
+# we'll see if flex and bison results work ok
+include $(LOCAL_PATH)/src/conf/sources.mk
+# build libinlet (libinlet.a)
+# this will go eventually but should serve as a template for access
+include $(LOCAL_PATH)/src/control/maxmsp/sources.mk
 
 # temporarily end with joel stuff which has no major deps
 # and forces static libraries to be built
