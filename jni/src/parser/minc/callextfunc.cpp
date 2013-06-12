@@ -7,7 +7,7 @@
 #include <math.h>
 #include <RTcmix.h>
 #include "minc_internal.h"
-#include <handle.h>
+#include "handle.h"
 #include <rtcmix_types.h>
 #include <prototypes.h>
 #include <PField.h>

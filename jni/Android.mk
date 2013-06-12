@@ -37,6 +37,8 @@ include $(LOCAL_PATH)/src/conf/sources.mk
 include $(LOCAL_PATH)/src/control/maxmsp/sources.mk
 # build libpfbus (libpfbus.a)
 include $(LOCAL_PATH)/src/control/pfbus/sources.mk
+# build libminc (libminc.a)
+include $(LOCAL_PATH)/src/parser/minc/sources.mk
 
 # temporarily end with joel stuff which has no major deps
 # and forces static libraries to be built
