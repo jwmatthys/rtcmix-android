@@ -1,5 +1,9 @@
 /* File : rtcmix.i */
 %module rtcmix
+%include arrays_java.i
+
+%apply float[] {float *};
+%apply int[] {int *};
 
 %inline %{
   extern int rtcmixmain();

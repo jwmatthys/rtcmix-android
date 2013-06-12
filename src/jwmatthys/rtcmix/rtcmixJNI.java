@@ -10,14 +10,14 @@ package jwmatthys.rtcmix;
 
 public class rtcmixJNI {
   public final static native int rtcmixmain();
-  public final static native int pd_rtsetparams(float jarg1, int jarg2, int jarg3, long jarg4, long jarg5, String jarg6);
+  public final static native int pd_rtsetparams(float jarg1, int jarg2, int jarg3, float[] jarg4, float[] jarg5, String jarg6);
   public final static native int parse_score(String jarg1, int jarg2);
   public final static native void pullTraverse();
   public final static native int check_bang();
-  public final static native int check_vals(long jarg1);
+  public final static native int check_vals(float[] jarg1);
   public final static native int parse_dispatch(String jarg1, long jarg2, int jarg3, long jarg4);
   public final static native int check_error();
   public final static native void pfield_set(int jarg1, float jarg2);
-  public final static native void buffer_set(String jarg1, long jarg2, int jarg3, int jarg4, int jarg5);
+  public final static native void buffer_set(String jarg1, float[] jarg2, int jarg3, int jarg4, int jarg5);
   public final static native void flush_sched();
 }

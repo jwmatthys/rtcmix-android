@@ -13,8 +13,8 @@ public class rtcmix {
     return rtcmixJNI.rtcmixmain();
   }
 
-  public static int pd_rtsetparams(float sr, int nchans, int vecsize, SWIGTYPE_p_float mm_inbuf, SWIGTYPE_p_float mm_outbuf, String mm_errbuf) {
-    return rtcmixJNI.pd_rtsetparams(sr, nchans, vecsize, SWIGTYPE_p_float.getCPtr(mm_inbuf), SWIGTYPE_p_float.getCPtr(mm_outbuf), mm_errbuf);
+  public static int pd_rtsetparams(float sr, int nchans, int vecsize, float[] mm_inbuf, float[] mm_outbuf, String mm_errbuf) {
+    return rtcmixJNI.pd_rtsetparams(sr, nchans, vecsize, mm_inbuf, mm_outbuf, mm_errbuf);
   }
 
   public static int parse_score(String thebuf, int buflen) {
@@ -29,8 +29,8 @@ public class rtcmix {
     return rtcmixJNI.check_bang();
   }
 
-  public static int check_vals(SWIGTYPE_p_float thevals) {
-    return rtcmixJNI.check_vals(SWIGTYPE_p_float.getCPtr(thevals));
+  public static int check_vals(float[] thevals) {
+    return rtcmixJNI.check_vals(thevals);
   }
 
   public static int parse_dispatch(String funcname, SWIGTYPE_p_Arg arglist, int n_args, SWIGTYPE_p_Arg return_val) {
@@ -45,8 +45,8 @@ public class rtcmix {
     rtcmixJNI.pfield_set(inlet, pval);
   }
 
-  public static void buffer_set(String bufname, SWIGTYPE_p_float bufstart, int nframes, int nchans, int modtime) {
-    rtcmixJNI.buffer_set(bufname, SWIGTYPE_p_float.getCPtr(bufstart), nframes, nchans, modtime);
+  public static void buffer_set(String bufname, float[] bufstart, int nframes, int nchans, int modtime) {
+    rtcmixJNI.buffer_set(bufname, bufstart, nframes, nchans, modtime);
   }
 
   public static void flush_sched() {
