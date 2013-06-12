@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_types.o: \
- jni/src/rtcmix/rtcmix_types.cpp jni/src/rtcmix/rtcmix_types.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_types.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -16,9 +17,10 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_types.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/src/rtcmix/utils.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/utils.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/include/PField.h jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
@@ -26,7 +28,7 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_types.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -60,13 +62,13 @@ jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/src/rtcmix/utils.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/utils.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h:
 

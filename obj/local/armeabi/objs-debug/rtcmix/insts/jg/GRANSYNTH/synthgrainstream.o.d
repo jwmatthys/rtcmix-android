@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/insts/jg/GRANSYNTH/synthgrainstream.o: \
- jni/insts/jg/GRANSYNTH/synthgrainstream.cpp \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/jg/GRANSYNTH/synthgrainstream.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/synthgrainstream.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -24,23 +24,39 @@ obj/local/armeabi/objs-debug/rtcmix/insts/jg/GRANSYNTH/synthgrainstream.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
- jni/include/Ougens.h jni/include/../genlib/Oallpass.h \
- jni/include/../genlib/Oallpassi.h jni/include/../genlib/Oallpass.h \
- jni/include/../genlib/Obalance.h jni/include/../genlib/Orms.h \
- jni/include/../genlib/Oonepole.h jni/include/../genlib/Obucket.h \
- jni/include/../genlib/Ocomb.h jni/include/../genlib/Ocombi.h \
- jni/include/../genlib/Ocomb.h jni/include/../genlib/Odcblock.h \
- jni/include/../genlib/Odelay.h jni/include/../genlib/Odelayi.h \
- jni/include/../genlib/Odelay.h jni/include/../genlib/Odistort.h \
- jni/include/../genlib/Oequalizer.h jni/include/../genlib/Offt.h \
- jni/include/../genlib/Oonepole.h jni/include/../genlib/Ooscil.h \
- jni/include/../genlib/Ooscili.h jni/include/../genlib/Orand.h \
- jni/include/../genlib/Oreson.h jni/include/../genlib/Orms.h \
- jni/include/../genlib/Ortgetin.h jni/include/../genlib/Ostrum.h \
- jni/insts/jg/GRANSYNTH/synthgrainstream.h \
- jni/insts/jg/GRANSYNTH/../../../src/rtcmix/Random.h \
- jni/include/RefCounted.h jni/insts/jg/GRANSYNTH/synthgrainvoice.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Ougens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpass.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpassi.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpass.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Obalance.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orms.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oonepole.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Obucket.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocomb.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocombi.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocomb.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odcblock.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelay.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelayi.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelay.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odistort.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oequalizer.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Offt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oonepole.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ooscil.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ooscili.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orand.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oreson.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orms.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ortgetin.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ostrum.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/synthgrainstream.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/../../../src/rtcmix/Random.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/synthgrainvoice.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
@@ -91,70 +107,70 @@ obj/local/armeabi/objs-debug/rtcmix/insts/jg/GRANSYNTH/synthgrainstream.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/include/Ougens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Ougens.h:
 
-jni/include/../genlib/Oallpass.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpass.h:
 
-jni/include/../genlib/Oallpassi.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpassi.h:
 
-jni/include/../genlib/Oallpass.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oallpass.h:
 
-jni/include/../genlib/Obalance.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Obalance.h:
 
-jni/include/../genlib/Orms.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orms.h:
 
-jni/include/../genlib/Oonepole.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oonepole.h:
 
-jni/include/../genlib/Obucket.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Obucket.h:
 
-jni/include/../genlib/Ocomb.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocomb.h:
 
-jni/include/../genlib/Ocombi.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocombi.h:
 
-jni/include/../genlib/Ocomb.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ocomb.h:
 
-jni/include/../genlib/Odcblock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odcblock.h:
 
-jni/include/../genlib/Odelay.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelay.h:
 
-jni/include/../genlib/Odelayi.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelayi.h:
 
-jni/include/../genlib/Odelay.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odelay.h:
 
-jni/include/../genlib/Odistort.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Odistort.h:
 
-jni/include/../genlib/Oequalizer.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oequalizer.h:
 
-jni/include/../genlib/Offt.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Offt.h:
 
-jni/include/../genlib/Oonepole.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oonepole.h:
 
-jni/include/../genlib/Ooscil.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ooscil.h:
 
-jni/include/../genlib/Ooscili.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ooscili.h:
 
-jni/include/../genlib/Orand.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orand.h:
 
-jni/include/../genlib/Oreson.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Oreson.h:
 
-jni/include/../genlib/Orms.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Orms.h:
 
-jni/include/../genlib/Ortgetin.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ortgetin.h:
 
-jni/include/../genlib/Ostrum.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/../genlib/Ostrum.h:
 
-jni/insts/jg/GRANSYNTH/synthgrainstream.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/synthgrainstream.h:
 
-jni/insts/jg/GRANSYNTH/../../../src/rtcmix/Random.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/../../../src/rtcmix/Random.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/insts/jg/GRANSYNTH/synthgrainvoice.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/GRANSYNTH/synthgrainvoice.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:

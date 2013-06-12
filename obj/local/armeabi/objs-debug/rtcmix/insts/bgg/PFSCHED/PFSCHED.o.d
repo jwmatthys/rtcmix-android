@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/insts/bgg/PFSCHED/PFSCHED.o: \
- jni/insts/bgg/PFSCHED/PFSCHED.cpp \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/bgg/PFSCHED/PFSCHED.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -21,8 +21,10 @@ obj/local/armeabi/objs-debug/rtcmix/insts/bgg/PFSCHED/PFSCHED.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
- jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -41,12 +43,17 @@ obj/local/armeabi/objs-debug/rtcmix/insts/bgg/PFSCHED/PFSCHED.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- jni/include/rtdefs.h jni/include/ugens.h jni/include/spray.h \
- jni/insts/bgg/PFSCHED/PFSCHED.h jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/include/rt.h jni/include/rtdefs.h jni/include/PFieldSet.h \
- jni/insts/bgg/PFSCHED/../../../src/include/maxdispargs.h \
- jni/insts/bgg/PFSCHED/../../../src/rtcmix/rtcmix_types.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PFieldSet.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/../../../src/include/maxdispargs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/../../../src/rtcmix/rtcmix_types.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -90,13 +97,13 @@ obj/local/armeabi/objs-debug/rtcmix/insts/bgg/PFSCHED/PFSCHED.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-jni/include/Instrument.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -134,24 +141,24 @@ jni/include/rt_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/insts/bgg/PFSCHED/PFSCHED.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/PFSCHED.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/include/rt.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/PFieldSet.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PFieldSet.h:
 
-jni/insts/bgg/PFSCHED/../../../src/include/maxdispargs.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/../../../src/include/maxdispargs.h:
 
-jni/insts/bgg/PFSCHED/../../../src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/bgg/PFSCHED/../../../src/rtcmix/rtcmix_types.h:

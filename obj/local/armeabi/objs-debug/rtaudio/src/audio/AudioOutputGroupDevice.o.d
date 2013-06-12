@@ -1,6 +1,7 @@
-obj/local/armeabi/objs-debug/rtaudio/src/audio/AudioOutputGroupDevice.o: \
- jni/src/audio/AudioOutputGroupDevice.cpp \
- jni/src/audio/AudioOutputGroupDevice.h jni/src/audio/AudioDevice.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtaudio/src/audio/AudioOutputGroupDevice.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioOutputGroupDevice.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioOutputGroupDevice.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -21,9 +22,9 @@ obj/local/armeabi/objs-debug/rtaudio/src/audio/AudioOutputGroupDevice.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h
 
-jni/src/audio/AudioOutputGroupDevice.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioOutputGroupDevice.h:
 
-jni/src/audio/AudioDevice.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

@@ -1,7 +1,9 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_wrappers.o: \
- jni/src/rtcmix/rtcmix_wrappers.cpp jni/src/rtcmix/prototypes.h \
- jni/src/rtcmix/buffers.h jni/include/rt_types.h \
- jni/src/rtcmix/rtcmix_types.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_wrappers.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_wrappers.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -18,7 +20,7 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_wrappers.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/RTcmix.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -39,16 +41,19 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtcmix_wrappers.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- jni/include/rtdefs.h jni/include/bus.h jni/include/Locked.h \
- jni/include/Lockable.h jni/include/lock.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h
 
-jni/src/rtcmix/prototypes.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
 
-jni/src/rtcmix/buffers.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -82,7 +87,7 @@ jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -124,12 +129,12 @@ jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:

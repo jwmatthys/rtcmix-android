@@ -1,7 +1,8 @@
-obj/local/armeabi/objs-debug/pfbus/src/control/pfbus/PFBusPField.o: \
- jni/src/control/pfbus/PFBusPField.cpp \
- jni/src/control/pfbus/PFBusPField.h jni/include/PField.h \
- jni/include/RefCounted.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/pfbus/src/control/pfbus/PFBusPField.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/control/pfbus/PFBusPField.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/control/pfbus/PFBusPField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -28,11 +29,11 @@ obj/local/armeabi/objs-debug/pfbus/src/control/pfbus/PFBusPField.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-jni/src/control/pfbus/PFBusPField.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/control/pfbus/PFBusPField.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

@@ -1,2 +1,2 @@
-obj/local/armeabi/objs-debug/rtaudio/src/audio/OSSAudioDevice.o: \
- jni/src/audio/OSSAudioDevice.cpp
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtaudio/src/audio/OSSAudioDevice.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/OSSAudioDevice.cpp

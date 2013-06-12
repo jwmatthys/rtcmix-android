@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/insts/std/METAFLUTE/SFLUTE.o: \
- jni/insts/std/METAFLUTE/SFLUTE.cpp jni/include/ugens.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/METAFLUTE/SFLUTE.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/SFLUTE.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
@@ -15,8 +16,11 @@ obj/local/armeabi/objs-debug/rtcmix/insts/std/METAFLUTE/SFLUTE.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/rt_types.h jni/include/spray.h jni/include/Instrument.h \
- jni/include/RefCounted.h jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -37,11 +41,14 @@ obj/local/armeabi/objs-debug/rtcmix/insts/std/METAFLUTE/SFLUTE.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- jni/include/rtdefs.h jni/insts/std/METAFLUTE/SFLUTE.h \
- jni/insts/std/METAFLUTE/metaflute.h jni/include/rt.h \
- jni/include/rtdefs.h jni/insts/std/METAFLUTE/sflcfuncs.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/SFLUTE.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/metaflute.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/sflcfuncs.h
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
@@ -73,15 +80,15 @@ jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/include/Instrument.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -123,14 +130,14 @@ jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/insts/std/METAFLUTE/SFLUTE.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/SFLUTE.h:
 
-jni/insts/std/METAFLUTE/metaflute.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/metaflute.h:
 
-jni/include/rt.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/insts/std/METAFLUTE/sflcfuncs.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/std/METAFLUTE/sflcfuncs.h:

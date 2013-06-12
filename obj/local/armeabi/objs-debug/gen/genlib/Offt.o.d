@@ -1,5 +1,7 @@
-obj/local/armeabi/objs-debug/gen//genlib/Offt.o: jni//genlib/Offt.cpp \
- jni/genlib/Offt.h jni/genlib/FFTReal.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Offt.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/Offt.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Offt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/FFTReal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -17,9 +19,9 @@ obj/local/armeabi/objs-debug/gen//genlib/Offt.o: jni//genlib/Offt.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h
 
-jni/genlib/Offt.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Offt.h:
 
-jni/genlib/FFTReal.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/FFTReal.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

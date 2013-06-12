@@ -1,4 +1,5 @@
-obj/local/armeabi/objs-debug/gen//genlib/comb.o: jni//genlib/comb.c \
- jni/include/combs.h
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/comb.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/comb.c \
+ /home/jwmatthys/android/rtcmix-android/jni/include/combs.h
 
-jni/include/combs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/combs.h:

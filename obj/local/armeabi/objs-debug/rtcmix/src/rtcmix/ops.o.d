@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/ops.o: \
- jni/src/rtcmix/ops.cpp jni/src/rtcmix/rtcmix_types.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/ops.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/ops.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -16,11 +17,15 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/ops.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/PField.h jni/include/RefCounted.h jni/src/rtcmix/utils.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/utils.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -54,16 +59,16 @@ jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/src/rtcmix/utils.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/utils.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:

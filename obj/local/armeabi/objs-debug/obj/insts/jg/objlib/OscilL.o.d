@@ -1,7 +1,9 @@
-obj/local/armeabi/objs-debug/obj/insts/jg/objlib/OscilL.o: \
- jni/insts/jg/objlib/OscilL.cpp jni/insts/jg/objlib/OscilL.h \
- jni/insts/jg/objlib/OscilN.h jni/insts/jg/objlib/Oscil.h \
- jni/insts/jg/objlib/objdefs.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/obj/insts/jg/objlib/OscilL.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilL.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilL.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilN.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Oscil.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -52,13 +54,13 @@ obj/local/armeabi/objs-debug/obj/insts/jg/objlib/OscilL.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-jni/insts/jg/objlib/OscilL.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilL.h:
 
-jni/insts/jg/objlib/OscilN.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilN.h:
 
-jni/insts/jg/objlib/Oscil.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Oscil.h:
 
-jni/insts/jg/objlib/objdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

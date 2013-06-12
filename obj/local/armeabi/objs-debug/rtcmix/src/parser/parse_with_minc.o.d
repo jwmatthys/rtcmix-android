@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/parser/parse_with_minc.o: \
- jni/src/parser/parse_with_minc.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/parser/parse_with_minc.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/parser/parse_with_minc.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,7 +22,8 @@ obj/local/armeabi/objs-debug/rtcmix/src/parser/parse_with_minc.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- jni/src/parser/rtcmix_parse.h jni/include/Option.h
+ /home/jwmatthys/android/rtcmix-android/jni/src/parser/rtcmix_parse.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Option.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -68,6 +69,6 @@ obj/local/armeabi/objs-debug/rtcmix/src/parser/parse_with_minc.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-jni/src/parser/rtcmix_parse.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/parser/rtcmix_parse.h:
 
-jni/include/Option.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Option.h:

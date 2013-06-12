@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/snd/src/sndlib/extra.o: \
- jni/src/sndlib/extra.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/snd/src/sndlib/extra.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/extra.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,7 +22,7 @@ obj/local/armeabi/objs-debug/snd/src/sndlib/extra.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- jni/src/sndlib/sndlib.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h \
@@ -76,7 +76,7 @@ obj/local/armeabi/objs-debug/snd/src/sndlib/extra.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-jni/src/sndlib/sndlib.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 

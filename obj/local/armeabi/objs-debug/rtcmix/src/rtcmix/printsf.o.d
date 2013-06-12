@@ -1,6 +1,8 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/printsf.o: \
- jni/src/rtcmix/printsf.c jni/src/rtcmix/byte_routines.h \
- jni/src/rtcmix/sfheader.h jni/include/ugens.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/printsf.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/printsf.c \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfheader.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
@@ -16,7 +18,8 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/printsf.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/rt_types.h jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/file.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h \
@@ -52,11 +55,11 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/printsf.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h
 
-jni/src/rtcmix/byte_routines.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h:
 
-jni/src/rtcmix/sfheader.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfheader.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
@@ -88,9 +91,9 @@ jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

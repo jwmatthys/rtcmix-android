@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/merror.o: \
- jni/src/rtcmix/merror.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/merror.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/merror.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -41,7 +41,7 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/merror.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h \
- jni/src/rtcmix/mixerr.h
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/mixerr.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -125,4 +125,4 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/merror.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h:
 
-jni/src/rtcmix/mixerr.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/mixerr.h:

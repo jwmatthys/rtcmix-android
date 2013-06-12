@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/gen//genlib/Orand.o: jni//genlib/Orand.cpp \
- jni/genlib/Orand.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Orand.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/Orand.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Orand.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -18,7 +19,7 @@ obj/local/armeabi/objs-debug/gen//genlib/Orand.o: jni//genlib/Orand.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/time.h
 
-jni/genlib/Orand.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Orand.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h:
 

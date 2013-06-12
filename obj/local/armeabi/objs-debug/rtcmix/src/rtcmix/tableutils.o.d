@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tableutils.o: \
- jni/src/rtcmix/tableutils.cpp \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tableutils.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/tableutils.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -30,10 +30,14 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tableutils.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/src/rtcmix/tableutils.h jni/src/rtcmix/rtcmix_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/tableutils.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/include/PField.h jni/include/RefCounted.h jni/include/ugens.h \
- jni/include/rt_types.h jni/include/spray.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -95,18 +99,18 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tableutils.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/src/rtcmix/tableutils.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/tableutils.h:
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:

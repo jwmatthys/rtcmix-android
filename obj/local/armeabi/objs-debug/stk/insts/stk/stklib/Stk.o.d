@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Stk.o: \
- jni/insts/stk/stklib/Stk.cpp jni/insts/stk/stklib/Stk.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Stk.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -19,7 +20,7 @@ obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Stk.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h
 
-jni/insts/stk/stklib/Stk.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

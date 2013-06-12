@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: \
- jni/src/rtcmix/sfstats.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfstats.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -54,10 +54,11 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
- jni/include/sfheader.h jni/src/audio/sndlibsupport.h \
- jni/src/sndlib/sndlib.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- jni/include/rtdefs.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -167,12 +168,12 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfstats.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
 
-jni/include/sfheader.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
 
-jni/src/audio/sndlibsupport.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
 
-jni/src/sndlib/sndlib.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:

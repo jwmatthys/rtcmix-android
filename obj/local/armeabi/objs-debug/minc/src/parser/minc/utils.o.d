@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/minc/src/parser/minc/utils.o: \
- jni/src/parser/minc/utils.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/minc/src/parser/minc/utils.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/utils.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -21,8 +21,9 @@ obj/local/armeabi/objs-debug/minc/src/parser/minc/utils.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- jni/src/parser/minc/minc_internal.h jni/src/include/maxdispargs.h \
- jni/src/parser/minc/minc.h
+ /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc_internal.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -66,8 +67,8 @@ obj/local/armeabi/objs-debug/minc/src/parser/minc/utils.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-jni/src/parser/minc/minc_internal.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc_internal.h:
 
-jni/src/include/maxdispargs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h:
 
-jni/src/parser/minc/minc.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc.h:

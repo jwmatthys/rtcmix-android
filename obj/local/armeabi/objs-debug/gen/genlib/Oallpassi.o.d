@@ -1,11 +1,14 @@
-obj/local/armeabi/objs-debug/gen//genlib/Oallpassi.o: \
- jni//genlib/Oallpassi.cpp jni/genlib/Oallpassi.h jni/genlib/Oallpass.h \
- jni/genlib/Odelayi.h jni/genlib/Odelay.h
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Oallpassi.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/Oallpassi.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Oallpassi.h \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Oallpass.h \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Odelayi.h \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Odelay.h
 
-jni/genlib/Oallpassi.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Oallpassi.h:
 
-jni/genlib/Oallpass.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Oallpass.h:
 
-jni/genlib/Odelayi.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Odelayi.h:
 
-jni/genlib/Odelay.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Odelay.h:

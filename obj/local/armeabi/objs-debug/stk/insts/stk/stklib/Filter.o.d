@@ -1,6 +1,7 @@
-obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Filter.o: \
- jni/insts/stk/stklib/Filter.cpp jni/insts/stk/stklib/Filter.h \
- jni/insts/stk/stklib/Stk.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Filter.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -18,9 +19,9 @@ obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Filter.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h
 
-jni/insts/stk/stklib/Filter.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h:
 
-jni/insts/stk/stklib/Stk.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

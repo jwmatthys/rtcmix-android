@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtsetparams.o: \
- jni/src/rtcmix/rtsetparams.cpp jni/include/RTcmix.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtsetparams.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtsetparams.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -36,8 +37,12 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtsetparams.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/include/rtdefs.h jni/include/rt_types.h jni/include/bus.h \
- jni/include/Locked.h jni/include/Lockable.h jni/include/lock.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
@@ -54,10 +59,13 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtsetparams.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/src/audio/audio_devices.h jni/include/ugens.h jni/include/spray.h \
- jni/include/Option.h jni/src/rtcmix/rtdefs.h
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/audio_devices.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Option.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -131,17 +139,17 @@ jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -175,12 +183,12 @@ jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/src/audio/audio_devices.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/audio_devices.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/include/Option.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Option.h:
 
-jni/src/rtcmix/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h:

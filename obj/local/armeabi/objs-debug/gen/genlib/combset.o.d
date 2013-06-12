@@ -1,4 +1,5 @@
-obj/local/armeabi/objs-debug/gen//genlib/combset.o: jni//genlib/combset.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/combset.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/combset.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,7 +23,7 @@ obj/local/armeabi/objs-debug/gen//genlib/combset.o: jni//genlib/combset.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- jni/include/combs.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/combs.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -70,4 +71,4 @@ obj/local/armeabi/objs-debug/gen//genlib/combset.o: jni//genlib/combset.c \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-jni/include/combs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/combs.h:

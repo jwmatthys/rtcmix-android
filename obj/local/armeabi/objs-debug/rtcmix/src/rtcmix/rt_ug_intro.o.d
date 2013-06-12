@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rt_ug_intro.o: \
- jni/src/rtcmix/rt_ug_intro.cpp jni/include/ugens.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rt_ug_intro.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rt_ug_intro.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
@@ -15,10 +16,12 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rt_ug_intro.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/rt_types.h jni/include/spray.h jni/include/ug_intro.h \
- jni/src/rtcmix/rtcmix_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ug_intro.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/include/RTcmix.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -39,10 +42,13 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rt_ug_intro.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- jni/include/rtdefs.h jni/include/bus.h jni/include/Locked.h \
- jni/include/Lockable.h jni/include/lock.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
@@ -74,17 +80,17 @@ jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/include/ug_intro.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ug_intro.h:
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -126,12 +132,12 @@ jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:

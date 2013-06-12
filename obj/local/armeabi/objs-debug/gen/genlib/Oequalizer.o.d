@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/gen//genlib/Oequalizer.o: \
- jni//genlib/Oequalizer.cpp jni/genlib/Oequalizer.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Oequalizer.o: \
+ /home/jwmatthys/android/rtcmix-android/jni//genlib/Oequalizer.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/genlib/Oequalizer.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -25,7 +26,7 @@ obj/local/armeabi/objs-debug/gen//genlib/Oequalizer.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-jni/genlib/Oequalizer.h:
+/home/jwmatthys/android/rtcmix-android/jni/genlib/Oequalizer.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 

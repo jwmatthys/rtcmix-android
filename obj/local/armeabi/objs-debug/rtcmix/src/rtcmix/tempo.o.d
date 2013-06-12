@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tempo.o: \
- jni/src/rtcmix/tempo.c \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/tempo.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/tempo.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \

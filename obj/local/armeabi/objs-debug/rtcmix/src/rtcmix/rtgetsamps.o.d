@@ -1,5 +1,6 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtgetsamps.o: \
- jni/src/rtcmix/rtgetsamps.cpp jni/include/RTcmix.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtgetsamps.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtgetsamps.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -36,23 +37,30 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/rtgetsamps.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/include/rtdefs.h jni/include/rt_types.h jni/include/bus.h \
- jni/include/Locked.h jni/include/Lockable.h jni/include/lock.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/select.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/src/rtcmix/prototypes.h jni/src/rtcmix/buffers.h \
- jni/src/rtcmix/rtcmix_types.h jni/src/rtcmix/rtdefs.h \
- jni/src/audio/AudioDevice.h jni/src/rtcmix/Option.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Option.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -126,17 +134,17 @@ jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h:
 
@@ -150,17 +158,17 @@ jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/src/rtcmix/prototypes.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
 
-jni/src/rtcmix/buffers.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
-jni/src/rtcmix/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h:
 
-jni/src/audio/AudioDevice.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h:
 
-jni/src/rtcmix/Option.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Option.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 

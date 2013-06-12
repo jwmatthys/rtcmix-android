@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/RTcmixMain.o: \
- jni/src/rtcmix/RTcmixMain.cpp \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/RTcmixMain.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/RTcmixMain.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -46,13 +46,25 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/RTcmixMain.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- jni/src/rtcmix/RTcmixMain.h jni/include/RTcmix.h jni/include/rtdefs.h \
- jni/include/rt_types.h jni/include/bus.h jni/include/Locked.h \
- jni/include/Lockable.h jni/include/lock.h jni/src/audio/AudioDevice.h \
- jni/include/Option.h jni/src/rtcmix/version.h jni/include/ugens.h \
- jni/include/spray.h jni/include/ug_intro.h jni/src/rtcmix/rtcmix_types.h \
- jni/src/rtcmix/prototypes.h jni/src/rtcmix/buffers.h \
- jni/src/rtcmix/../parser/rtcmix_parse.h jni/include/sockdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/RTcmixMain.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Option.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/version.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/ug_intro.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/../parser/rtcmix_parse.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/sockdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/netinet/in.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/in.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/byteorder.h \
@@ -62,8 +74,9 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/RTcmixMain.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/in6.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/ipv6.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/netinet/in6.h \
- jni/src/include/maxdispargs.h jni/src/rtcmix/heap/heap.h \
- jni/include/Lockable.h
+ /home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/signal.h:
 
@@ -157,43 +170,43 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/RTcmixMain.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
 
-jni/src/rtcmix/RTcmixMain.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/RTcmixMain.h:
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
 
-jni/src/audio/AudioDevice.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h:
 
-jni/include/Option.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Option.h:
 
-jni/src/rtcmix/version.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/version.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/include/ug_intro.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ug_intro.h:
 
-jni/src/rtcmix/rtcmix_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
 
-jni/src/rtcmix/prototypes.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
 
-jni/src/rtcmix/buffers.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
 
-jni/src/rtcmix/../parser/rtcmix_parse.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/../parser/rtcmix_parse.h:
 
-jni/include/sockdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/sockdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/netinet/in.h:
 
@@ -213,8 +226,8 @@ jni/include/sockdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/netinet/in6.h:
 
-jni/src/include/maxdispargs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h:
 
-jni/src/rtcmix/heap/heap.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:

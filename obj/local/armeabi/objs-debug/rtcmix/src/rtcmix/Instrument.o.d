@@ -1,6 +1,8 @@
-obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Instrument.o: \
- jni/src/rtcmix/Instrument.cpp jni/src/rtcmix/globals.h \
- jni/src/rtcmix/version.h jni/include/bus.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Instrument.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Instrument.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/globals.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/version.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -17,7 +19,7 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Instrument.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- jni/include/RTcmix.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -38,32 +40,43 @@ obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Instrument.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- jni/include/rtdefs.h jni/include/rt_types.h jni/include/Locked.h \
- jni/include/Lockable.h jni/include/lock.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream \
- jni/src/rtcmix/Instrument.h jni/include/RefCounted.h \
- jni/src/rtcmix/rtdefs.h jni/src/rtcmix/rt.h jni/include/notetags.h \
- jni/src/audio/sndlibsupport.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Instrument.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/notetags.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- jni/src/sndlib/sndlib.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- jni/include/sfheader.h jni/src/rtcmix/BusSlot.h jni/include/Lockable.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/BusSlot.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- jni/include/ugens.h jni/include/spray.h jni/src/rtcmix/heap/heap.h \
- jni/include/PField.h jni/include/PFieldSet.h \
- jni/src/include/maxdispargs.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PField.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/PFieldSet.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h
 
-jni/src/rtcmix/globals.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/globals.h:
 
-jni/src/rtcmix/version.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/version.h:
 
-jni/include/bus.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -97,7 +110,7 @@ jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-jni/include/RTcmix.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -139,15 +152,15 @@ jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-jni/include/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/Locked.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
-jni/include/lock.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -159,17 +172,17 @@ jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream:
 
-jni/src/rtcmix/Instrument.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Instrument.h:
 
-jni/include/RefCounted.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
 
-jni/src/rtcmix/rtdefs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtdefs.h:
 
-jni/src/rtcmix/rt.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rt.h:
 
-jni/include/notetags.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/notetags.h:
 
-jni/src/audio/sndlibsupport.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h:
 
@@ -177,26 +190,26 @@ jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
 
-jni/src/sndlib/sndlib.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
-jni/include/sfheader.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
 
-jni/src/rtcmix/BusSlot.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/BusSlot.h:
 
-jni/include/Lockable.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
 
-jni/src/rtcmix/heap/heap.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h:
 
-jni/include/PField.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PField.h:
 
-jni/include/PFieldSet.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/PFieldSet.h:
 
-jni/src/include/maxdispargs.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h:

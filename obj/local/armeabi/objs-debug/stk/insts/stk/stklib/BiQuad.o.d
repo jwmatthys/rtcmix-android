@@ -1,6 +1,8 @@
-obj/local/armeabi/objs-debug/stk/insts/stk/stklib/BiQuad.o: \
- jni/insts/stk/stklib/BiQuad.cpp jni/insts/stk/stklib/BiQuad.h \
- jni/insts/stk/stklib/Filter.h jni/insts/stk/stklib/Stk.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/stk/insts/stk/stklib/BiQuad.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/BiQuad.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/BiQuad.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -25,11 +27,11 @@ obj/local/armeabi/objs-debug/stk/insts/stk/stklib/BiQuad.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h
 
-jni/insts/stk/stklib/BiQuad.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/BiQuad.h:
 
-jni/insts/stk/stklib/Filter.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h:
 
-jni/insts/stk/stklib/Stk.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 

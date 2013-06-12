@@ -1,9 +1,13 @@
-obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Brass.o: \
- jni/insts/stk/stklib/Brass.cpp jni/insts/stk/stklib/Brass.h \
- jni/insts/stk/stklib/Instrmnt.h jni/insts/stk/stklib/Stk.h \
- jni/insts/stk/stklib/DelayA.h jni/insts/stk/stklib/Delay.h \
- jni/insts/stk/stklib/Filter.h jni/insts/stk/stklib/BiQuad.h \
- jni/insts/stk/stklib/PoleZero.h \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Brass.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Brass.cpp \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Brass.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Instrmnt.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/DelayA.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Delay.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/BiQuad.h \
+ /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/PoleZero.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -29,23 +33,25 @@ obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Brass.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h
+ /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+ /home/jwmatthys/android/rtcmix-android/jni/include/spray.h
 
-jni/insts/stk/stklib/Brass.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Brass.h:
 
-jni/insts/stk/stklib/Instrmnt.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Instrmnt.h:
 
-jni/insts/stk/stklib/Stk.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h:
 
-jni/insts/stk/stklib/DelayA.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/DelayA.h:
 
-jni/insts/stk/stklib/Delay.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Delay.h:
 
-jni/insts/stk/stklib/Filter.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Filter.h:
 
-jni/insts/stk/stklib/BiQuad.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/BiQuad.h:
 
-jni/insts/stk/stklib/PoleZero.h:
+/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/PoleZero.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h:
 
@@ -97,8 +103,8 @@ jni/insts/stk/stklib/PoleZero.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-jni/include/ugens.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
 
-jni/include/rt_types.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
 
-jni/include/spray.h:
+/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:

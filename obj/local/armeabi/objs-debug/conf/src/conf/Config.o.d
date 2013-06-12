@@ -1,5 +1,5 @@
-obj/local/armeabi/objs-debug/conf/src/conf/Config.o: \
- jni/src/conf/Config.cpp \
+/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/conf/src/conf/Config.o: \
+ /home/jwmatthys/android/rtcmix-android/jni/src/conf/Config.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -21,9 +21,9 @@ obj/local/armeabi/objs-debug/conf/src/conf/Config.o: \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- jni/src/conf/Config.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/conf/Config.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- jni/src/conf/Dict.h \
+ /home/jwmatthys/android/rtcmix-android/jni/src/conf/Dict.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/errno.h \
@@ -72,11 +72,11 @@ obj/local/armeabi/objs-debug/conf/src/conf/Config.o: \
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-jni/src/conf/Config.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/conf/Config.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-jni/src/conf/Dict.h:
+/home/jwmatthys/android/rtcmix-android/jni/src/conf/Dict.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/errno.h:
 
