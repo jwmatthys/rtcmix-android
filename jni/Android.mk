@@ -35,6 +35,8 @@ include $(LOCAL_PATH)/src/conf/sources.mk
 # build libinlet (libinlet.a)
 # this will go eventually but should serve as a template for access
 include $(LOCAL_PATH)/src/control/maxmsp/sources.mk
+# build libpfbus (libpfbus.a)
+include $(LOCAL_PATH)/src/control/pfbus/sources.mk
 
 # temporarily end with joel stuff which has no major deps
 # and forces static libraries to be built

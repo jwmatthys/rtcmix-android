@@ -8,7 +8,7 @@
 #include <rtcmix_types.h>
 #include <PField.h>
 #include <utils.h>   // in ../../rtcmix
-#include <PFBusPField.h>
+#include "PFBusPField.h"
 #include <ugens.h>		// for warn, die
 
 
