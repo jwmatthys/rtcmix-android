@@ -260,5 +260,6 @@ insts/joel/tuning/tuning.c \
 src/audio/audio_devices.cpp \
 src/rtcmix/RTcmixMain.cpp \
 src/rtcmix/main.cpp \
-src/parser/parse_with_minc.c
+src/parser/parse_with_minc.c \
+rtcmix_wrap.c # generated with swig
 include $(BUILD_SHARED_LIBRARY)

@@ -39,4 +39,5 @@ include $(LOCAL_PATH)/src/parser/minc/sources.mk
 # build librtheap (librtheap.a)
 include $(LOCAL_PATH)/src/rtcmix/heap/sources.mk
 
+# build full librtcmix.so
 include $(LOCAL_PATH)/rtcmix.mk

@@ -1,3 +1,6 @@
 # view AndroidManifest.xml #generated:9
--keep class com.example.hellojni.HelloJni { <init>(...); }
+-keep class jwmatthys.rtcmix.RTcmixDroid { <init>(...); }
+
+# onClick res/layout/main.xml #generated:7
+-keepclassmembers class * { *** onRunButtonClick(...); }
 
