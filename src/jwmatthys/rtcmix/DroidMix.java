@@ -147,7 +147,7 @@ public class DroidMix extends Activity implements OnClickListener
 	    if (rtcmix.rtcmixmain() != 0)
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
 	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,buffsize>>1,inbuf,outbuf,errcode); // TODO: figure out stereo
-	    String testcode = "env=maketable(\"window\",1000,1); pan=makeLFO(\"sine\",1,0,1); lfo=makeLFO(\"square\",5,-100,100); WAVETABLE(0,60,10000*env,800+lfo,pan); WAVETABLE(1,60,20000, 333, 0.5)";
+	    String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
 	    int codelen = testcode.length();
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    if (rtcmix.parse_score(testcode,codelen) != 0)
