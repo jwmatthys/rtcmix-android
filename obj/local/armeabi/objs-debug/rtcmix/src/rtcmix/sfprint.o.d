@@ -1,7 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfprint.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfprint.c \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sfprint.o: \
+ jni/src/rtcmix/sfprint.c jni/src/rtcmix/sfheader.h jni/include/ugens.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
@@ -17,8 +15,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ jni/include/rt_types.h jni/include/spray.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/file.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h \
@@ -53,9 +50,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sfheader.h:
+jni/src/rtcmix/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
@@ -87,9 +84,9 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

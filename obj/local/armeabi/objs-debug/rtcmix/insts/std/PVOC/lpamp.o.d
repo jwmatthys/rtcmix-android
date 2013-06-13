@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/PVOC/lpamp.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/lpamp.c \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h \
+obj/local/armeabi/objs-debug/rtcmix/insts/std/PVOC/lpamp.o: \
+ jni/insts/std/PVOC/lpamp.c jni/insts/std/PVOC/pv.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -32,7 +31,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/PVOC/pv.h:
+jni/insts/std/PVOC/pv.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

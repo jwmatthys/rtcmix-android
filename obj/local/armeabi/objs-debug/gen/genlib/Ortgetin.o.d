@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Ortgetin.o: \
- /home/jwmatthys/android/rtcmix-android/jni//genlib/Ortgetin.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
+obj/local/armeabi/objs-debug/gen//genlib/Ortgetin.o: \
+ jni//genlib/Ortgetin.cpp jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -37,18 +36,12 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/genlib/Ortgetin.h
+ jni/include/rtdefs.h jni/include/rt_types.h jni/include/bus.h \
+ jni/include/Locked.h jni/include/Lockable.h jni/include/lock.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/rtdefs.h \
+ jni/genlib/Ortgetin.h
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
+jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -122,22 +115,22 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
+jni/include/Locked.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
+jni/include/Lockable.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
+jni/include/lock.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/genlib/Ortgetin.h:
+jni/genlib/Ortgetin.h:

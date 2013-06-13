@@ -1,10 +1,7 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/MOVE/BASE.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/BASE.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/BASE.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
+obj/local/armeabi/objs-debug/rtcmix/insts/std/MOVE/BASE.o: \
+ jni/insts/std/MOVE/BASE.cpp jni/insts/std/MOVE/BASE.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
+ jni/include/rt_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
@@ -40,32 +37,27 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ jni/include/rtdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/mixerr.h \
+ jni/include/ugens.h jni/include/spray.h jni/include/mixerr.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/common.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/cmixfuns.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/setup.h
+ jni/insts/std/MOVE/common.h jni/include/rt.h jni/include/rtdefs.h \
+ jni/insts/std/MOVE/cmixfuns.h jni/insts/std/MOVE/setup.h
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/BASE.h:
+jni/insts/std/MOVE/BASE.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
@@ -137,7 +129,7 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -151,20 +143,20 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/mixerr.h:
+jni/include/mixerr.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/common.h:
+jni/insts/std/MOVE/common.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
+jni/include/rt.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/cmixfuns.h:
+jni/insts/std/MOVE/cmixfuns.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/setup.h:
+jni/insts/std/MOVE/setup.h:

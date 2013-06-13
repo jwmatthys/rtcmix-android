@@ -1,9 +1,7 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/sound.c \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/sound.o: \
+ jni/src/rtcmix/sound.c jni/src/rtcmix/prototypes.h \
+ jni/src/rtcmix/buffers.h jni/include/rt_types.h \
+ jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -20,13 +18,11 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
+ jni/include/ugens.h jni/include/spray.h jni/src/audio/sndlibsupport.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
+ jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h \
@@ -35,10 +31,8 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/dbug.h \
+ jni/include/sfheader.h jni/include/rtdefs.h \
+ jni/src/rtcmix/byte_routines.h jni/src/rtcmix/dbug.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
@@ -67,15 +61,15 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/stat.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/times.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/times.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Option.h
+ jni/include/Option.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
+jni/src/rtcmix/prototypes.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
+jni/src/rtcmix/buffers.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
+jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -109,11 +103,11 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
+jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h:
 
@@ -121,7 +115,7 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
+jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -139,13 +133,13 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
+jni/include/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h:
+jni/src/rtcmix/byte_routines.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/dbug.h:
+jni/src/rtcmix/dbug.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -203,4 +197,4 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/times.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Option.h:
+jni/include/Option.h:

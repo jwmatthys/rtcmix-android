@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/gen/gen6.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/gen/gen6.c \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/gen/gen6.o: \
+ jni/src/rtcmix/gen/gen6.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -23,9 +23,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -73,8 +71,8 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:

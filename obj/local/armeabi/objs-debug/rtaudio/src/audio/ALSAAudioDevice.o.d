@@ -1,2 +1,2 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtaudio/src/audio/ALSAAudioDevice.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/ALSAAudioDevice.cpp
+obj/local/armeabi/objs-debug/rtaudio/src/audio/ALSAAudioDevice.o: \
+ jni/src/audio/ALSAAudioDevice.cpp

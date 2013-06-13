@@ -1,7 +1,6 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/getsample.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/getsample.c \
- /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/getsample.o: \
+ jni/src/rtcmix/getsample.c jni/include/sfheader.h \
+ jni/src/rtcmix/byte_routines.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -26,9 +25,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/select.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -45,9 +42,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h
 
-/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
+jni/include/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h:
+jni/src/rtcmix/byte_routines.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -97,11 +94,11 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h:
 

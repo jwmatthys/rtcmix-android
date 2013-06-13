@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/MOVE/MOVE.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/MOVE.cpp \
+obj/local/armeabi/objs-debug/rtcmix/insts/std/MOVE/MOVE.o: \
+ jni/insts/std/MOVE/MOVE.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -30,17 +30,10 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/mixerr.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/MOVE.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/BASE.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/include/mixerr.h jni/include/rt.h jni/include/rtdefs.h \
+ jni/insts/std/MOVE/MOVE.h jni/insts/std/MOVE/BASE.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -52,8 +45,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/common.h
+ jni/include/rtdefs.h jni/insts/std/MOVE/common.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -115,27 +107,27 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/mixerr.h:
+jni/include/mixerr.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
+jni/include/rt.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/MOVE.h:
+jni/insts/std/MOVE/MOVE.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/BASE.h:
+jni/insts/std/MOVE/BASE.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -159,6 +151,6 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/MOVE/common.h:
+jni/insts/std/MOVE/common.h:

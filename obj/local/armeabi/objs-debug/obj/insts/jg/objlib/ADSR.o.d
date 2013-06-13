@@ -1,8 +1,6 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/obj/insts/jg/objlib/ADSR.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ADSR.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ADSR.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Envelope.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h \
+obj/local/armeabi/objs-debug/obj/insts/jg/objlib/ADSR.o: \
+ jni/insts/jg/objlib/ADSR.cpp jni/insts/jg/objlib/ADSR.h \
+ jni/insts/jg/objlib/Envelope.h jni/insts/jg/objlib/objdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -53,11 +51,11 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ADSR.h:
+jni/insts/jg/objlib/ADSR.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Envelope.h:
+jni/insts/jg/objlib/Envelope.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h:
+jni/insts/jg/objlib/objdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

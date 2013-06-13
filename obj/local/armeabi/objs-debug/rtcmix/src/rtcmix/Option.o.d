@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Option.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Option.cpp \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/Option.o: \
+ jni/src/rtcmix/Option.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -11,7 +11,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Option.h \
+ jni/src/rtcmix/Option.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
@@ -30,9 +30,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/conf/Config.h \
+ jni/src/conf/Config.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/conf/Dict.h \
+ jni/src/conf/Dict.h \
  /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/errno.h \
@@ -62,7 +62,7 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/Option.h:
+jni/src/rtcmix/Option.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -100,11 +100,11 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/conf/Config.h:
+jni/src/conf/Config.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/conf/Dict.h:
+jni/src/conf/Dict.h:
 
 /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream:
 

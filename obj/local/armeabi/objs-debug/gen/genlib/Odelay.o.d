@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Odelay.o: \
- /home/jwmatthys/android/rtcmix-android/jni//genlib/Odelay.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/genlib/Odelay.h \
+obj/local/armeabi/objs-debug/gen//genlib/Odelay.o: jni//genlib/Odelay.cpp \
+ jni/genlib/Odelay.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -24,7 +23,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-/home/jwmatthys/android/rtcmix-android/jni/genlib/Odelay.h:
+jni/genlib/Odelay.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 

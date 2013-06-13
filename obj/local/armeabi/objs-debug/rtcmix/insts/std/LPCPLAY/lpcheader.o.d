@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/LPCPLAY/lpcheader.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/LPCPLAY/lpcheader.c \
+obj/local/armeabi/objs-debug/rtcmix/insts/std/LPCPLAY/lpcheader.o: \
+ jni/insts/std/LPCPLAY/lpcheader.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -43,11 +43,8 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/fcntl.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/fcntl.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/fcntl.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/LPCPLAY/lp.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/LPCPLAY/lpcheader.h
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/insts/std/LPCPLAY/lp.h jni/insts/std/LPCPLAY/lpcheader.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -135,12 +132,12 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/fcntl.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/LPCPLAY/lp.h:
+jni/insts/std/LPCPLAY/lp.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/LPCPLAY/lpcheader.h:
+jni/insts/std/LPCPLAY/lpcheader.h:

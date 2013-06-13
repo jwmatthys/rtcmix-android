@@ -1,11 +1,11 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/audio/audio_devices.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/audio_devices.cpp \
+obj/local/armeabi/objs-debug/rtcmix/src/audio/audio_devices.o: \
+ jni/src/audio/audio_devices.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/android/api-level.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h \
+ jni/include/RTcmix.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -37,39 +37,28 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Locked.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
+ jni/include/rtdefs.h jni/include/rt_types.h jni/include/bus.h \
+ jni/include/Locked.h jni/include/Lockable.h jni/include/lock.h \
+ jni/src/audio/sndlibsupport.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
+ jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
+ jni/include/sfheader.h jni/include/ugens.h jni/include/spray.h \
+ jni/src/rtcmix/prototypes.h jni/src/rtcmix/buffers.h \
+ jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Option.h \
+ jni/include/Option.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/alloca.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioFileDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/ThreadedAudioDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDeviceImpl.h \
+ jni/src/audio/AudioDevice.h jni/src/audio/AudioFileDevice.h \
+ jni/src/audio/ThreadedAudioDevice.h jni/src/audio/AudioDeviceImpl.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/select.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioIODevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioOutputGroupDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/DualOutputAudioDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/audio_devices.h
+ jni/src/audio/AudioIODevice.h jni/src/audio/AudioOutputGroupDevice.h \
+ jni/src/audio/DualOutputAudioDevice.h jni/src/audio/audio_devices.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h:
 
@@ -81,7 +70,7 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RTcmix.h:
+jni/include/RTcmix.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -145,19 +134,19 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Locked.h:
+jni/include/Locked.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
+jni/include/Lockable.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
+jni/include/lock.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
+jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h:
 
@@ -165,25 +154,25 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
+jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
+jni/include/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
+jni/src/rtcmix/prototypes.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
+jni/src/rtcmix/buffers.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
+jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Option.h:
+jni/include/Option.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -193,20 +182,20 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h:
+jni/src/audio/AudioDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioFileDevice.h:
+jni/src/audio/AudioFileDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/ThreadedAudioDevice.h:
+jni/src/audio/ThreadedAudioDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDeviceImpl.h:
+jni/src/audio/AudioDeviceImpl.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/select.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioIODevice.h:
+jni/src/audio/AudioIODevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioOutputGroupDevice.h:
+jni/src/audio/AudioOutputGroupDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/DualOutputAudioDevice.h:
+jni/src/audio/DualOutputAudioDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/audio_devices.h:
+jni/src/audio/audio_devices.h:

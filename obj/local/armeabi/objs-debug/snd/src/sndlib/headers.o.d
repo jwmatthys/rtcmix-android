@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/snd/src/sndlib/headers.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/headers.c \
+obj/local/armeabi/objs-debug/snd/src/sndlib/headers.o: \
+ jni/src/sndlib/headers.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -48,7 +48,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h
+ jni/src/sndlib/sndlib.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -146,4 +146,4 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
+jni/src/sndlib/sndlib.h:

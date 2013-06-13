@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/DataFile.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/DataFile.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/DataFile.h \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/DataFile.o: \
+ jni/src/rtcmix/DataFile.cpp jni/src/rtcmix/DataFile.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/_types.h \
@@ -25,11 +24,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/DataFile.h:
+jni/src/rtcmix/DataFile.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h:
 
@@ -79,8 +76,8 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:

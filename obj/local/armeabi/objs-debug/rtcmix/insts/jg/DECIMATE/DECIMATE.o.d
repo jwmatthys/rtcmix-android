@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/jg/DECIMATE/DECIMATE.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/DECIMATE/DECIMATE.cpp \
+obj/local/armeabi/objs-debug/rtcmix/insts/jg/DECIMATE/DECIMATE.o: \
+ jni/insts/jg/DECIMATE/DECIMATE.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -30,12 +30,8 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -47,12 +43,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/DECIMATE/DECIMATE.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objlib.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ADSR.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Envelope.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h \
+ jni/include/rtdefs.h jni/insts/jg/DECIMATE/DECIMATE.h \
+ jni/insts/jg/objlib/objlib.h jni/insts/jg/objlib/ADSR.h \
+ jni/insts/jg/objlib/Envelope.h jni/insts/jg/objlib/objdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/select.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
@@ -64,44 +57,25 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Allpass.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineN.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGFilter.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Balance.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/RMS.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGOnePole.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGBiQuad.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Butter.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ClampDenormals.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Comb.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DCBlock.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineA.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineL.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Equalizer.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JCRev.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Reverb.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/KOscilN.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilN.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Oscil.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/NRev.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/NZero.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGNoise.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Notch.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGOneZero.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilL.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/PRCRev.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/SubNoise.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/SubNoiseL.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TableL.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TableN.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TwoPole.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TwoZero.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/WavShape.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZAllpass.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZComb.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZNotch.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h
+ jni/insts/jg/objlib/Allpass.h jni/insts/jg/objlib/DLineN.h \
+ jni/insts/jg/objlib/JGFilter.h jni/insts/jg/objlib/Balance.h \
+ jni/insts/jg/objlib/RMS.h jni/insts/jg/objlib/JGOnePole.h \
+ jni/insts/jg/objlib/JGBiQuad.h jni/insts/jg/objlib/Butter.h \
+ jni/insts/jg/objlib/ClampDenormals.h jni/insts/jg/objlib/Comb.h \
+ jni/insts/jg/objlib/DCBlock.h jni/insts/jg/objlib/DLineA.h \
+ jni/insts/jg/objlib/DLineL.h jni/insts/jg/objlib/Equalizer.h \
+ jni/insts/jg/objlib/JCRev.h jni/insts/jg/objlib/Reverb.h \
+ jni/insts/jg/objlib/KOscilN.h jni/insts/jg/objlib/OscilN.h \
+ jni/insts/jg/objlib/Oscil.h jni/insts/jg/objlib/NRev.h \
+ jni/insts/jg/objlib/NZero.h jni/insts/jg/objlib/JGNoise.h \
+ jni/insts/jg/objlib/Notch.h jni/insts/jg/objlib/JGOneZero.h \
+ jni/insts/jg/objlib/OscilL.h jni/insts/jg/objlib/PRCRev.h \
+ jni/insts/jg/objlib/SubNoise.h jni/insts/jg/objlib/SubNoiseL.h \
+ jni/insts/jg/objlib/TableL.h jni/insts/jg/objlib/TableN.h \
+ jni/insts/jg/objlib/TwoPole.h jni/insts/jg/objlib/TwoZero.h \
+ jni/insts/jg/objlib/WavShape.h jni/insts/jg/objlib/ZAllpass.h \
+ jni/insts/jg/objlib/ZComb.h jni/insts/jg/objlib/ZNotch.h \
+ jni/include/rt.h jni/include/rtdefs.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
@@ -163,17 +137,17 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -197,17 +171,17 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/DECIMATE/DECIMATE.h:
+jni/insts/jg/DECIMATE/DECIMATE.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objlib.h:
+jni/insts/jg/objlib/objlib.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ADSR.h:
+jni/insts/jg/objlib/ADSR.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Envelope.h:
+jni/insts/jg/objlib/Envelope.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/objdefs.h:
+jni/insts/jg/objlib/objdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/unistd.h:
 
@@ -231,78 +205,78 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Allpass.h:
+jni/insts/jg/objlib/Allpass.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineN.h:
+jni/insts/jg/objlib/DLineN.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGFilter.h:
+jni/insts/jg/objlib/JGFilter.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Balance.h:
+jni/insts/jg/objlib/Balance.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/RMS.h:
+jni/insts/jg/objlib/RMS.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGOnePole.h:
+jni/insts/jg/objlib/JGOnePole.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGBiQuad.h:
+jni/insts/jg/objlib/JGBiQuad.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Butter.h:
+jni/insts/jg/objlib/Butter.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ClampDenormals.h:
+jni/insts/jg/objlib/ClampDenormals.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Comb.h:
+jni/insts/jg/objlib/Comb.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DCBlock.h:
+jni/insts/jg/objlib/DCBlock.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineA.h:
+jni/insts/jg/objlib/DLineA.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/DLineL.h:
+jni/insts/jg/objlib/DLineL.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Equalizer.h:
+jni/insts/jg/objlib/Equalizer.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JCRev.h:
+jni/insts/jg/objlib/JCRev.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Reverb.h:
+jni/insts/jg/objlib/Reverb.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/KOscilN.h:
+jni/insts/jg/objlib/KOscilN.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilN.h:
+jni/insts/jg/objlib/OscilN.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Oscil.h:
+jni/insts/jg/objlib/Oscil.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/NRev.h:
+jni/insts/jg/objlib/NRev.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/NZero.h:
+jni/insts/jg/objlib/NZero.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGNoise.h:
+jni/insts/jg/objlib/JGNoise.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/Notch.h:
+jni/insts/jg/objlib/Notch.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/JGOneZero.h:
+jni/insts/jg/objlib/JGOneZero.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/OscilL.h:
+jni/insts/jg/objlib/OscilL.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/PRCRev.h:
+jni/insts/jg/objlib/PRCRev.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/SubNoise.h:
+jni/insts/jg/objlib/SubNoise.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/SubNoiseL.h:
+jni/insts/jg/objlib/SubNoiseL.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TableL.h:
+jni/insts/jg/objlib/TableL.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TableN.h:
+jni/insts/jg/objlib/TableN.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TwoPole.h:
+jni/insts/jg/objlib/TwoPole.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/TwoZero.h:
+jni/insts/jg/objlib/TwoZero.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/WavShape.h:
+jni/insts/jg/objlib/WavShape.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZAllpass.h:
+jni/insts/jg/objlib/ZAllpass.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZComb.h:
+jni/insts/jg/objlib/ZComb.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/jg/objlib/ZNotch.h:
+jni/insts/jg/objlib/ZNotch.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
+jni/include/rt.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:

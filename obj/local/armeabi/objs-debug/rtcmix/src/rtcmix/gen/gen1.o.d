@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/gen/gen1.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/gen/gen1.c \
+obj/local/armeabi/objs-debug/rtcmix/src/rtcmix/gen/gen1.o: \
+ jni/src/rtcmix/gen/gen1.c \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -42,21 +42,16 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysconf.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/capability.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/src/rtcmix/prototypes.h jni/src/rtcmix/buffers.h \
+ jni/src/rtcmix/rtcmix_types.h jni/src/audio/sndlibsupport.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
+ jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h \
+ jni/include/sfheader.h jni/include/rtdefs.h \
+ jni/src/rtcmix/byte_routines.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/stat.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/stat.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/fcntl.h \
@@ -149,19 +144,19 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pathconf.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/prototypes.h:
+jni/src/rtcmix/prototypes.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/buffers.h:
+jni/src/rtcmix/buffers.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
+jni/src/rtcmix/rtcmix_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
+jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h:
 
@@ -169,15 +164,15 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/endian.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
+jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
+jni/include/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/byte_routines.h:
+jni/src/rtcmix/byte_routines.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/stat.h:
 

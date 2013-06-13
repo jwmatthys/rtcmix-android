@@ -1,8 +1,6 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtheap/src/rtcmix/heap/heap.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/lock.h \
+obj/local/armeabi/objs-debug/rtheap/src/rtcmix/heap/heap.o: \
+ jni/src/rtcmix/heap/heap.cpp jni/src/rtcmix/heap/heap.h \
+ jni/include/Lockable.h jni/include/lock.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -38,18 +36,15 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
+ jni/include/rt_types.h jni/include/rtdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/heap/heap.h:
+jni/src/rtcmix/heap/heap.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Lockable.h:
+jni/include/Lockable.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/lock.h:
+jni/include/lock.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -121,14 +116,14 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
 /home/jwmatthys/android/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream:

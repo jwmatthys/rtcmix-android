@@ -1,7 +1,6 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtaudio/src/audio/AudioDeviceImpl.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDeviceImpl.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDeviceImpl.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h \
+obj/local/armeabi/objs-debug/rtaudio/src/audio/AudioDeviceImpl.o: \
+ jni/src/audio/AudioDeviceImpl.cpp jni/src/audio/AudioDeviceImpl.h \
+ jni/src/audio/sndlibsupport.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/endian.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -21,7 +20,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h \
+ jni/src/sndlib/sndlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h \
@@ -30,17 +29,15 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/audio/audiostream.h \
+ jni/include/sfheader.h jni/include/rtdefs.h jni/src/audio/AudioDevice.h \
+ jni/src/audio/audiostream.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/malloc.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDeviceImpl.h:
+jni/src/audio/AudioDeviceImpl.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/sndlibsupport.h:
+jni/src/audio/sndlibsupport.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/endian.h:
 
@@ -80,7 +77,7 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/sndlib/sndlib.h:
+jni/src/sndlib/sndlib.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -98,13 +95,13 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/sfheader.h:
+jni/include/sfheader.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/AudioDevice.h:
+jni/src/audio/AudioDevice.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/audio/audiostream.h:
+jni/src/audio/audiostream.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/string.h:
 

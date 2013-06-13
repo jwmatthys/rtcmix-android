@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Shakers.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Shakers.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h \
+obj/local/armeabi/objs-debug/stk/insts/stk/stklib/Shakers.o: \
+ jni/insts/stk/stklib/Shakers.cpp jni/insts/stk/stklib/Stk.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -30,13 +29,10 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Shakers.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Instrmnt.h
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/insts/stk/stklib/Shakers.h jni/insts/stk/stklib/Instrmnt.h
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Stk.h:
+jni/insts/stk/stklib/Stk.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -96,12 +92,12 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Shakers.h:
+jni/insts/stk/stklib/Shakers.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/stk/stklib/Instrmnt.h:
+jni/insts/stk/stklib/Instrmnt.h:

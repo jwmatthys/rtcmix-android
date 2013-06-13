@@ -1,9 +1,7 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/minc/src/parser/minc/trees.o: \
- /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/trees.c \
- /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc_internal.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc.h \
- /home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/handle.h \
+obj/local/armeabi/objs-debug/minc/src/parser/minc/trees.o: \
+ jni/src/parser/minc/trees.c jni/src/parser/minc/minc_internal.h \
+ jni/src/include/maxdispargs.h jni/src/parser/minc/minc.h \
+ jni/src/parser/minc/handle.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -36,13 +34,13 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/assert.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc_internal.h:
+jni/src/parser/minc/minc_internal.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/include/maxdispargs.h:
+jni/src/include/maxdispargs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/minc.h:
+jni/src/parser/minc/minc.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/src/parser/minc/handle.h:
+jni/src/parser/minc/handle.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

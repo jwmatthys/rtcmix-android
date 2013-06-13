@@ -1,5 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/insts/std/STRUM/VFRET1.o: \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/VFRET1.cpp \
+obj/local/armeabi/objs-debug/rtcmix/insts/std/STRUM/VFRET1.o: \
+ jni/insts/std/STRUM/VFRET1.cpp \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,12 +22,8 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/ugens.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/spray.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/bus.h \
+ jni/include/ugens.h jni/include/rt_types.h jni/include/spray.h \
+ jni/include/Instrument.h jni/include/RefCounted.h jni/include/bus.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/time.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -46,12 +42,9 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/signal.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/sigcontext.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/VFRET1.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/strums.h \
- /home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/delayq.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rt.h \
- /home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h
+ jni/include/rtdefs.h jni/insts/std/STRUM/VFRET1.h \
+ jni/insts/std/STRUM/strums.h jni/insts/std/STRUM/delayq.h \
+ jni/include/rt.h jni/include/rtdefs.h
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdlib.h:
 
@@ -97,17 +90,17 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/ugens.h:
+jni/include/ugens.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt_types.h:
+jni/include/rt_types.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/spray.h:
+jni/include/spray.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/Instrument.h:
+jni/include/Instrument.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/RefCounted.h:
+jni/include/RefCounted.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/bus.h:
+jni/include/bus.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/pthread.h:
 
@@ -145,14 +138,14 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sched.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/VFRET1.h:
+jni/insts/std/STRUM/VFRET1.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/strums.h:
+jni/insts/std/STRUM/strums.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/insts/std/STRUM/delayq.h:
+jni/insts/std/STRUM/delayq.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rt.h:
+jni/include/rt.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/include/rtdefs.h:
+jni/include/rtdefs.h:

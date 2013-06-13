@@ -3,7 +3,9 @@
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := rtcmix
-#LOCAL_CFLAGS	:= -Werror # -fexceptions
+LOCAL_CFLAGS	:= -O3
+LOCAL_CPPFLAGS	:= $(LOCAL_CFLAGS)
+LOCAL_LDFLAGS	:= -Wl,--export-dynamic
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/include
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/genlib
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/src/audio

@@ -4,7 +4,8 @@ source	:= $(wildcard $(LOCAL_PATH)/genlib/*.c)
 source	+= $(wildcard $(LOCAL_PATH)/genlib/*.cpp)
 
 LOCAL_MODULE    := gen
-#LOCAL_CFLAGS	:= -Werror
+LOCAL_CFLAGS	:= -O3
+LOCAL_CPPFLAGS	:= $(LOCAL_CFLAGS)
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/include
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/genlib
 LOCAL_SRC_FILES := $(source:$(LOCAL_PATH)%=%)

@@ -1,7 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/gen//genlib/Obalance.o: \
- /home/jwmatthys/android/rtcmix-android/jni//genlib/Obalance.cpp \
- /home/jwmatthys/android/rtcmix-android/jni/genlib/Obalance.h \
- /home/jwmatthys/android/rtcmix-android/jni/genlib/Orms.h \
+obj/local/armeabi/objs-debug/gen//genlib/Obalance.o: \
+ jni//genlib/Obalance.cpp jni/genlib/Obalance.h jni/genlib/Orms.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -25,11 +23,11 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/jwmatthys/android/rtcmix-android/jni/genlib/Oonepole.h
+ jni/genlib/Oonepole.h
 
-/home/jwmatthys/android/rtcmix-android/jni/genlib/Obalance.h:
+jni/genlib/Obalance.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/genlib/Orms.h:
+jni/genlib/Orms.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
 
@@ -77,4 +75,4 @@
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/jwmatthys/android/rtcmix-android/jni/genlib/Oonepole.h:
+jni/genlib/Oonepole.h:
