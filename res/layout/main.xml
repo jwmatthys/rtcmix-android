@@ -5,11 +5,22 @@
     android:layout_height="fill_parent"
     >
 <Button
-    android:id="@+id/RunButton"  
+    android:id="@+id/StartSound"  
     android:layout_width="wrap_content"  
     android:layout_height="wrap_content"  
-    android:text="Run..."  
-    android:onClick="onRunButtonClick"
+    android:text="Start Audio"  
+    />
+<Button
+    android:id="@+id/EndSound"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:text="End Audio"  
+    />
+<Button
+    android:id="@+id/ToggleSound"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:text="Toggle Noise/RTcmix"  
     />
 <ScrollView
     android:id="@+id/Scroller"
