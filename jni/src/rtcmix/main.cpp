@@ -69,15 +69,6 @@ extern "C" {
 int
 rtcmixmain()	// BGG mm -- now called this for max/msp
 {
-#ifdef LINUX
- #ifdef DENORMAL_CHECK
-   detect_denormals();
- #endif
-   signal(SIGFPE, sigfpe_handler);          /* Install signal handler */
-#endif /* LINUX */
-#ifdef SGI
-   flush_all_underflows_to_zero();
-#endif
 
 // BGG no argc and argv in max/msp version mm
    app = new RTcmixMain();
@@ -90,7 +81,7 @@ rtcmixmain()	// BGG mm -- now called this for max/msp
 // BGG -- these will be called from max/msp, an instrument will set
 // the *_ready value to signal to return something other than NULL
 // max/msp will then respond accordingly
-
+extern float *maxmsp_outbuf; // set in mm_rtsetparams()
 int bang_ready = 0;
 
 int check_bang()
@@ -139,9 +130,10 @@ int check_error()
    }
 }
 
-void pullTraverse()
+float* pullTraverse()
 {
         app->inTraverse(NULL, NULL);
+		return maxmsp_outbuf;
 }
 
 int pd_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float *mm_outbuf, char *mm_errbuf)

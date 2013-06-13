@@ -71,10 +71,10 @@ RTcmix::mm_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float
    SR = sr;
    NCHANS = nchans;
    RTBUFSAMPS = vecsize;
-	maxmsp_inbuf = mm_inbuf; // passed in from max/msp via maxmsp_rtsetparams()
-	maxmsp_outbuf = mm_outbuf; // passed in from max/msp via maxmsp_rtsetparams()
-	maxmsp_errbuf = mm_errbuf; // passed in from max/msp via maxmsp_rtsetparams()
-
+   maxmsp_inbuf = mm_inbuf; // passed in from max/msp via maxmsp_rtsetparams()
+   maxmsp_outbuf = mm_outbuf; // passed in from max/msp via maxmsp_rtsetparams()
+   maxmsp_errbuf = mm_errbuf; // passed in from max/msp via maxmsp_rtsetparams()
+   
    int numBuffers = Option::bufferCount();
 
 // BGG mm

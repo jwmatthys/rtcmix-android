@@ -7,8 +7,9 @@
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/SWIGTYPE_p_Arg.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/R$string.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/rtcmix.class \
-/home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/AudioGenerator.class \
+/home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/MyLog.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/BuildConfig.class \
+/home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/SWIGTYPE_p_int.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/SWIGTYPE_p_float.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/R$attr.class \
 /home/jwmatthys/android/rtcmix-android/bin/classes/jwmatthys/rtcmix/DroidMix$1.class \

@@ -1,6 +1,5 @@
-/home/jwmatthys/android/rtcmix-android/obj/local/armeabi/objs-debug/rtcmix/rtcmix_wrap.o: \
- /home/jwmatthys/android/rtcmix-android/jni/rtcmix_wrap.c \
- /home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h \
+obj/local/armeabi/objs-debug/rtcmix/rtcmix_wrap.o: jni/rtcmix_wrap.c \
+ jni/src/rtcmix/rtcmix_types.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -25,7 +24,7 @@
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/strings.h \
  /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/memory.h
 
-/home/jwmatthys/android/rtcmix-android/jni/src/rtcmix/rtcmix_types.h:
+jni/src/rtcmix/rtcmix_types.h:
 
 /home/jwmatthys/android/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdio.h:
 

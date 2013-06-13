@@ -10,7 +10,7 @@
 
 #include <rtcmix_types.h>
 #define SWIGJAVA
-
+#define FillMeInAsSizeCannotBeDeterminedAutomatically 16384
 /* -----------------------------------------------------------------------------
  *  This section contains generic SWIG labels for method/variable
  *  declarations/attributes, and other compiler dependent labels.
@@ -758,10 +758,42 @@ jdoubleArray SWIG_JavaArrayOutDouble (JNIEnv *jenv, double *result, jsize sz) {
 #endif
 
 
+static int *new_intArray(int nelements) { 
+  return (int *) calloc(nelements,sizeof(int)); 
+}
+
+static void delete_intArray(int *ary) { 
+  free(ary); 
+}
+
+static int intArray_getitem(int *ary, int index) {
+    return ary[index];
+}
+static void intArray_setitem(int *ary, int index, int value) {
+    ary[index] = value;
+}
+
+
+static float *new_floatArray(int nelements) { 
+  return (float *) calloc(nelements,sizeof(float)); 
+}
+
+static void delete_floatArray(float *ary) { 
+  free(ary); 
+}
+
+static float floatArray_getitem(float *ary, int index) {
+    return ary[index];
+}
+static void floatArray_setitem(float *ary, int index, float value) {
+    ary[index] = value;
+}
+
+
   extern int rtcmixmain();
   extern int pd_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float *mm_outbuf, char *mm_errbuf);
   extern int parse_score(char *thebuf, int buflen);
-  extern void pullTraverse();
+  extern float* pullTraverse();
   extern int check_bang();
   extern int check_vals(float thevals[]);
   extern int parse_dispatch(const char *funcname, const Arg arglist[], const int n_args, Arg *return_val);
@@ -771,9 +803,140 @@ jdoubleArray SWIG_JavaArrayOutDouble (JNIEnv *jenv, double *result, jsize sz) {
   extern void flush_sched();
 
 
+static float *new_floatp() { 
+  return (float *) calloc(1,sizeof(float)); 
+}
+
+static float *copy_floatp(float value) { 
+  float *self = (float *) calloc(1,sizeof(float));
+  *self = value;
+  return self; 
+}
+
+static void delete_floatp(float *self) { 
+  if (self) free(self); 
+}
+
+static void floatp_assign(float *self, float value) {
+  *self = value;
+}
+
+static float floatp_value(float *self) {
+  return *self;
+}
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+SWIGEXPORT jlong JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_new_1intArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
+  jlong jresult = 0 ;
+  int arg1 ;
+  int *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (int)jarg1; 
+  result = (int *)new_intArray(arg1);
+  *(int **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_delete_1intArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  int *arg1 = (int *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(int **)&jarg1; 
+  delete_intArray(arg1);
+}
+
+
+SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_intArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+  jint jresult = 0 ;
+  int *arg1 = (int *) 0 ;
+  int arg2 ;
+  int result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(int **)&jarg1; 
+  arg2 = (int)jarg2; 
+  result = (int)intArray_getitem(arg1,arg2);
+  jresult = (jint)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_intArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jint jarg3) {
+  int *arg1 = (int *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(int **)&jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  intArray_setitem(arg1,arg2,arg3);
+}
+
+
+SWIGEXPORT jlong JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_new_1floatArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
+  jlong jresult = 0 ;
+  int arg1 ;
+  float *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (int)jarg1; 
+  result = (float *)new_floatArray(arg1);
+  *(float **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_delete_1floatArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  float *arg1 = (float *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(float **)&jarg1; 
+  delete_floatArray(arg1);
+}
+
+
+SWIGEXPORT jfloat JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_floatArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+  jfloat jresult = 0 ;
+  float *arg1 = (float *) 0 ;
+  int arg2 ;
+  float result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(float **)&jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)floatArray_getitem(arg1,arg2);
+  jresult = (jfloat)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_floatArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jfloat jarg3) {
+  float *arg1 = (float *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(float **)&jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  floatArray_setitem(arg1,arg2,arg3);
+}
+
 
 SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_rtcmixmain(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
@@ -843,10 +1006,15 @@ SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_parse_1score(JNIEnv *jen
 }
 
 
-SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pullTraverse(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pullTraverse(JNIEnv *jenv, jclass jcls) {
+  jfloatArray jresult = 0 ;
+  float *result = 0 ;
+  
   (void)jenv;
   (void)jcls;
-  pullTraverse();
+  result = (float *)pullTraverse();
+  jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
+  return jresult;
 }
 
 
@@ -959,6 +1127,77 @@ SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_flush_1sched(JNIEnv *jen
   (void)jenv;
   (void)jcls;
   flush_sched();
+}
+
+
+SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_new_1floatp(JNIEnv *jenv, jclass jcls) {
+  jfloatArray jresult = 0 ;
+  float *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (float *)new_floatp();
+  jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
+  return jresult;
+}
+
+
+SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_copy_1floatp(JNIEnv *jenv, jclass jcls, jfloat jarg1) {
+  jfloatArray jresult = 0 ;
+  float arg1 ;
+  float *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (float)jarg1; 
+  result = (float *)copy_floatp(arg1);
+  jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_delete_1floatp(JNIEnv *jenv, jclass jcls, jfloatArray jarg1) {
+  float *arg1 = (float *) 0 ;
+  jfloat *jarr1 ;
+  
+  (void)jenv;
+  (void)jcls;
+  if (!SWIG_JavaArrayInFloat(jenv, &jarr1, &arg1, jarg1)) return ; 
+  delete_floatp(arg1);
+  SWIG_JavaArrayArgoutFloat(jenv, jarr1, arg1, jarg1); 
+  free(arg1); 
+}
+
+
+SWIGEXPORT void JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_floatp_1assign(JNIEnv *jenv, jclass jcls, jfloatArray jarg1, jfloat jarg2) {
+  float *arg1 = (float *) 0 ;
+  float arg2 ;
+  jfloat *jarr1 ;
+  
+  (void)jenv;
+  (void)jcls;
+  if (!SWIG_JavaArrayInFloat(jenv, &jarr1, &arg1, jarg1)) return ; 
+  arg2 = (float)jarg2; 
+  floatp_assign(arg1,arg2);
+  SWIG_JavaArrayArgoutFloat(jenv, jarr1, arg1, jarg1); 
+  free(arg1); 
+}
+
+
+SWIGEXPORT jfloat JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_floatp_1value(JNIEnv *jenv, jclass jcls, jfloatArray jarg1) {
+  jfloat jresult = 0 ;
+  float *arg1 = (float *) 0 ;
+  jfloat *jarr1 ;
+  float result;
+  
+  (void)jenv;
+  (void)jcls;
+  if (!SWIG_JavaArrayInFloat(jenv, &jarr1, &arg1, jarg1)) return 0; 
+  result = (float)floatp_value(arg1);
+  jresult = (jfloat)result; 
+  SWIG_JavaArrayArgoutFloat(jenv, jarr1, arg1, jarg1); 
+  free(arg1); 
+  return jresult;
 }
 
 

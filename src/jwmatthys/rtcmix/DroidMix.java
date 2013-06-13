@@ -34,9 +34,9 @@ public class DroidMix extends Activity
     TextView outputText = null;
     ScrollView scroller = null;
     Thread t;
-    int sr = 22050;
+    int sr = 44100;
     boolean isRunning = true;
-    boolean toggleButton = false;
+    boolean toggleButton = true;
 
     /** Called when the activity is first created. */
     @Override
@@ -45,24 +45,50 @@ public class DroidMix extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        outputText = (TextView)findViewById(R.id.OutputText);
+        outputText.setText("Press 'Run' to toggle noise or tone...\n");
+        outputText.setMovementMethod(new ScrollingMovementMethod());	
+        scroller = (ScrollView)findViewById(R.id.Scroller);
+
 	t = new Thread()
 	    {
 		public void run()
 		{
 		    setPriority(Thread.MAX_PRIORITY);
-		    int buffsize = AudioTrack.getMinBufferSize(sr,
-							       AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+		    int minbuffsize = AudioTrack.getMinBufferSize(sr,
+							       AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT);
+			int buffsize = 4000;
+			MyLog.d("DroidMix", "buffsize: "+buffsize);
 		    // create an audiotrack object
 		    AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
-							   sr, AudioFormat.CHANNEL_OUT_MONO,
+							   sr, AudioFormat.CHANNEL_OUT_STEREO,
 							   AudioFormat.ENCODING_PCM_16BIT, buffsize,
 							   AudioTrack.MODE_STREAM);
 		    
-		    short samples[] = new short[buffsize];
-		    int amp = Short.MAX_VALUE;
-		    double twopi = 8.*Math.atan(1.);
-		    double fr = 440.f;
-		    double ph = 0.0;
+		    // instantiate rtcmixmain()
+			MyLog.d("DroidMix", "starting rtcmixmain()");
+		    if (rtcmix.rtcmixmain() != 0)
+				MyLog.d("DroidMix", "rtcmixmain() failed to load");
+		    else
+				MyLog.d("DroidMix", "rtcmixmain() loaded");
+		    float inbuf[] = new float[buffsize*2];
+		    float outbuf[] = new float[buffsize*2];
+		    short samples[] = new short[buffsize*2];
+			for (int i=0; i<buffsize*2; i++)
+				{
+					inbuf[i]=0.023f;
+					outbuf[i]=0.023f;
+					samples[i]=(short)0;
+				}
+		    String errcode = "";
+			MyLog.d("DroidMix", "calling pd_rtsetparams()");
+		    rtcmix.pd_rtsetparams(sr,1,buffsize,inbuf,outbuf,errcode);
+		    String testcode = "load(\"WAVETABLE\"); lfo=makeLFO(\"sine\",2,-100,100); WAVETABLE(0,60,20000,660+lfo,0.5)";
+			int codelen = testcode.length();
+			MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
+			if (rtcmix.parse_score(testcode,codelen) != 0)
+				MyLog.d("DroidMix", "parse_score() failed");
+			int amp = Short.MAX_VALUE;
 
 		    // start audio
 		    audioTrack.play();
@@ -70,13 +96,16 @@ public class DroidMix extends Activity
 		    // synthesis loop
 		    while(isRunning)
 			{
-			    fr =  440;
-			    for(int i=0; i < buffsize; i++){
+				if (!toggleButton)
+					{
+						outbuf = rtcmix.pullTraverse();
+						//MyLog.d("DroidMix", "traverse values: "+outbuf[0]+", "+outbuf[1]+", "+outbuf[2]+", "+outbuf[3]);
+					}
+			    for(int i=0; i < buffsize*2; i++){
 				if (toggleButton)
 				    samples[i] = (short) (amp*2*(freq.nextFloat()-0.5));
 				else
-				    samples[i] = (short) (amp*Math.sin(ph));
-				ph += twopi*fr/sr;
+					samples[i] = (short) (outbuf[i]*amp);
 			    }
 			    audioTrack.write(samples, 0, buffsize);
 			}
@@ -85,12 +114,6 @@ public class DroidMix extends Activity
 		}
 	    };
 	t.start();
-	
-        outputText = (TextView)findViewById(R.id.OutputText);
-        outputText.setText("Press 'Run' to start...\n");
-        outputText.setMovementMethod(new ScrollingMovementMethod());
-	
-        scroller = (ScrollView)findViewById(R.id.Scroller);
     }
     
     public void onRunButtonClick(View view)
@@ -98,15 +121,13 @@ public class DroidMix extends Activity
 	toggleButton = !toggleButton;
 	if (toggleButton)
 	    {
-		//outputText.append("Noise\n");
 		Toast.makeText(getApplicationContext(),
 			       "Noise", Toast.LENGTH_SHORT).show();
 	    }
 	else
 	    {
-		//outputText.append("Tone\n");
 		Toast.makeText(getApplicationContext(),
-			       "Tone", Toast.LENGTH_SHORT).show();
+			       "RTcmix score", Toast.LENGTH_SHORT).show();
 	    }
 	
 	// Ensure scroll to end of text
@@ -116,7 +137,7 @@ public class DroidMix extends Activity
 		}
 	    });
     }
-    
+        
     public void onDestroy()
     {
 	super.onDestroy();
