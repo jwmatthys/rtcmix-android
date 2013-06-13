@@ -22,11 +22,21 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ScrollView;
 import android.text.method.ScrollingMovementMethod;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.widget.Toast;
+import java.util.Random;
 
 public class DroidMix extends Activity
 {
+    Random freq = new Random();
     TextView outputText = null;
     ScrollView scroller = null;
+    Thread t;
+    int sr = 22050;
+    boolean isRunning = true;
+    boolean toggleButton = false;
 
     /** Called when the activity is first created. */
     @Override
@@ -35,67 +45,90 @@ public class DroidMix extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-	createEngine();
-	createBufferQueueAudioPlayer();
+	t = new Thread()
+	    {
+		public void run()
+		{
+		    setPriority(Thread.MAX_PRIORITY);
+		    int buffsize = AudioTrack.getMinBufferSize(sr,
+							       AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+		    // create an audiotrack object
+		    AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+							   sr, AudioFormat.CHANNEL_OUT_MONO,
+							   AudioFormat.ENCODING_PCM_16BIT, buffsize,
+							   AudioTrack.MODE_STREAM);
+		    
+		    short samples[] = new short[buffsize];
+		    int amp = Short.MAX_VALUE;
+		    double twopi = 8.*Math.atan(1.);
+		    double fr = 440.f;
+		    double ph = 0.0;
 
+		    // start audio
+		    audioTrack.play();
+
+		    // synthesis loop
+		    while(isRunning)
+			{
+			    fr =  440;
+			    for(int i=0; i < buffsize; i++){
+				if (toggleButton)
+				    samples[i] = (short) (amp*2*(freq.nextFloat()-0.5));
+				else
+				    samples[i] = (short) (amp*Math.sin(ph));
+				ph += twopi*fr/sr;
+			    }
+			    audioTrack.write(samples, 0, buffsize);
+			}
+		    audioTrack.stop();
+		    audioTrack.release();
+		}
+	    };
+	t.start();
+	
         outputText = (TextView)findViewById(R.id.OutputText);
         outputText.setText("Press 'Run' to start...\n");
         outputText.setMovementMethod(new ScrollingMovementMethod());
-
+	
         scroller = (ScrollView)findViewById(R.id.Scroller);
     }
-
+    
     public void onRunButtonClick(View view)
     {
-      outputText.append("Started...\n");
-      initAudio();
-      outputText.append("Finished!\n");
-      
-      // Ensure scroll to end of text
-      scroller.post(new Runnable() {
-        public void run() {
-          scroller.fullScroll(ScrollView.FOCUS_DOWN);
-        }
-      });
-    }
-
-    /** Calls into C/C++ code */
-/** Calls into C/C++ code */
-    public void initAudio()
-    {
-	int err = rtcmix.rtcmixmain();
-	outputText.append("The result of running rtcmixmain(): " + err + "\n");
-	float[] inbuf = new float[1024];
-	float[] outbuf = new float[1024];
-	for (int i=0; i<1024; i++)
+	toggleButton = !toggleButton;
+	if (toggleButton)
 	    {
-		inbuf[i] = (float)0.0;
-		outbuf[i] = (float)0.0;
+		//outputText.append("Noise\n");
+		Toast.makeText(getApplicationContext(),
+			       "Noise", Toast.LENGTH_SHORT).show();
 	    }
-	String rtcmix_error = "";
-	rtcmix.pd_rtsetparams(22050,2,1024,inbuf,outbuf,rtcmix_error);
-	outputText.append("Errors from running pd_rtsetparams(): " + rtcmix_error + "\n");
+	else
+	    {
+		//outputText.append("Tone\n");
+		Toast.makeText(getApplicationContext(),
+			       "Tone", Toast.LENGTH_SHORT).show();
+	    }
+	
+	// Ensure scroll to end of text
+	scroller.post(new Runnable() {
+		public void run() {
+		    scroller.fullScroll(ScrollView.FOCUS_DOWN);
+		}
+	    });
     }
-
-    /** Native methods, implemented in jni folder */
-    public static native void createEngine();
-    public static native void createBufferQueueAudioPlayer();
-    public static native void setPlayingAssetAudioPlayer(boolean isPlaying);
-    public static native boolean createUriAudioPlayer(String uri);
-    public static native void setPlayingUriAudioPlayer(boolean isPlaying);
-    public static native void setLoopingUriAudioPlayer(boolean isLooping);
-    public static native void setChannelMuteUriAudioPlayer(int chan, boolean mute);
-    public static native void setChannelSoloUriAudioPlayer(int chan, boolean solo);
-    public static native int getNumChannelsUriAudioPlayer();
-    public static native void setVolumeUriAudioPlayer(int millibel);
-    public static native void setMuteUriAudioPlayer(boolean mute);
-    public static native void enableStereoPositionUriAudioPlayer(boolean enable);
-    public static native void setStereoPositionUriAudioPlayer(int permille);
-    public static native boolean selectClip(int which, int count);
-    public static native boolean enableReverb(boolean enabled);
-    public static native boolean createAudioRecorder();
-    public static native void startRecording();
-    public static native void shutdown();
+    
+    public void onDestroy()
+    {
+	super.onDestroy();
+	isRunning = false;
+	try {
+            t.join();
+	} catch (InterruptedException e) {
+	    e.printStackTrace();
+	}
+	t = null;
+    }
+    
     /** static constructor */
     static {
         System.loadLibrary("rtcmix");
