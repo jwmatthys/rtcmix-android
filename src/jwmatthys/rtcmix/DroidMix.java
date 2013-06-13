@@ -55,10 +55,9 @@ public class DroidMix extends Activity
 		public void run()
 		{
 		    setPriority(Thread.MAX_PRIORITY);
-		    int minbuffsize = AudioTrack.getMinBufferSize(sr,
-							       AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT);
+		    //int buffsize = AudioTrack.getMinBufferSize(sr,
+			//				       AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT);
 			int buffsize = 4000;
-			MyLog.d("DroidMix", "buffsize: "+buffsize);
 		    // create an audiotrack object
 		    AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
 							   sr, AudioFormat.CHANNEL_OUT_STEREO,
@@ -71,19 +70,19 @@ public class DroidMix extends Activity
 				MyLog.d("DroidMix", "rtcmixmain() failed to load");
 		    else
 				MyLog.d("DroidMix", "rtcmixmain() loaded");
-		    float inbuf[] = new float[buffsize*2];
+		    float inbuf[] = new float[buffsize*2]; // must be 2 because it's stereo
 		    float outbuf[] = new float[buffsize*2];
 		    short samples[] = new short[buffsize*2];
 			for (int i=0; i<buffsize*2; i++)
 				{
-					inbuf[i]=0.023f;
+					inbuf[i]=0.f;
 					outbuf[i]=0.023f;
 					samples[i]=(short)0;
 				}
 		    String errcode = "";
 			MyLog.d("DroidMix", "calling pd_rtsetparams()");
-		    rtcmix.pd_rtsetparams(sr,1,buffsize,inbuf,outbuf,errcode);
-		    String testcode = "load(\"WAVETABLE\"); lfo=makeLFO(\"sine\",2,-100,100); WAVETABLE(0,60,20000,660+lfo,0.5)";
+		    rtcmix.pd_rtsetparams(sr,1,buffsize,inbuf,outbuf,errcode); // TODO: figure out stereo
+		    String testcode = "load(\"WAVETABLE\"); lfo=makeLFO(\"sine\",.5,-110,110); WAVETABLE(0,60,20000,440+lfo, 0.5)";
 			int codelen = testcode.length();
 			MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 			if (rtcmix.parse_score(testcode,codelen) != 0)
@@ -99,14 +98,21 @@ public class DroidMix extends Activity
 				if (!toggleButton)
 					{
 						outbuf = rtcmix.pullTraverse();
-						//MyLog.d("DroidMix", "traverse values: "+outbuf[0]+", "+outbuf[1]+", "+outbuf[2]+", "+outbuf[3]);
+						//MyLog.d("DroidMix", "low traverse values: "+outbuf[0]+", "+outbuf[1]+", "+outbuf[2]+", "+outbuf[3]+", "+outbuf[4]+", "+outbuf[5]+", "+outbuf[6]);
+						//MyLog.d("DroidMix", "high traverse values: "+outbuf[buffsize]+", "+outbuf[buffsize+1]+", "+outbuf[buffsize+2]+", "+outbuf[buffsize+3]+", "+outbuf[buffsize+4]+", "+outbuf[buffsize+5]+", "+outbuf[buffsize+6]);
 					}
-			    for(int i=0; i < buffsize*2; i++){
 				if (toggleButton)
-				    samples[i] = (short) (amp*2*(freq.nextFloat()-0.5));
+					{
+						for (int i=0; i < buffsize*2; i++)
+							samples[i] = (short) (amp*2*(freq.nextFloat()-0.5));
+					}
 				else
-					samples[i] = (short) (outbuf[i]*amp);
-			    }
+					{
+						for(int i=0; i < buffsize*2; i+=1)
+							{
+								samples[i] = (short) (outbuf[i]*amp);
+							}
+					}
 			    audioTrack.write(samples, 0, buffsize);
 			}
 		    audioTrack.stop();
