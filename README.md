@@ -1,4 +1,4 @@
 rtcmix-android
 ==============
 
-Android App which uses RTcmix audio library
+DroidMix is an Android front-end for the RTcmix audio library, http://rtcmix.org
