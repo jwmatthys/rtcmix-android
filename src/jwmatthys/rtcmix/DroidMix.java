@@ -37,7 +37,7 @@ public class DroidMix extends Activity implements OnClickListener
     ScrollView scroller = null;
     Button startSound, endSound, toggleSound;
     boolean isRunning = false;
-    boolean toggleButton = true;
+    boolean toggleButton = false;
 
     /** Called when the activity is first created. */
     @Override
@@ -61,6 +61,7 @@ public class DroidMix extends Activity implements OnClickListener
         scroller = (ScrollView)findViewById(R.id.Scroller);
     }
 
+    /*
     @Override
     public void onPause()
     {
@@ -70,6 +71,7 @@ public class DroidMix extends Activity implements OnClickListener
 	endSound.setEnabled(false);
 	startSound.setEnabled(true);
     }
+    */
 
     public void onClick (View v)
     {
@@ -150,8 +152,6 @@ public class DroidMix extends Activity implements OnClickListener
 	    String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
 	    int codelen = testcode.length();
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
-	    if (rtcmix.parse_score(testcode,codelen) != 0)
-		MyLog.d("DroidMix", "parse_score() failed");
 	    
 	    // start audio
 	    audioTrack.play();
@@ -161,8 +161,11 @@ public class DroidMix extends Activity implements OnClickListener
 		{
 		    if (toggleButton)
 			{
+			    if (rtcmix.parse_score(testcode,codelen) != 0)
+				MyLog.d("DroidMix", "parse_score() failed");
+			    toggleButton = false;
 			    for (int i=0; i < buffsize; i++)
-				samples[i] = (short) (MAX_AMP*2*(freq.nextFloat()-0.5));
+				samples[i] = (short)0;
 			    audioTrack.write(samples, 0, buffsize);
 			}
 		    else
@@ -175,16 +178,16 @@ public class DroidMix extends Activity implements OnClickListener
 			    audioTrack.write(samples, 0,buffsize);
 			}
 		}
-	    audioTrack.stop();
-	    audioTrack.release();
 	    return null;
 	}
     }
 
     public void onDestroy()
     {
-	super.onDestroy();
 	isRunning = false;
+	if (audio != null && audio.getStatus() != AsyncTask.Status.FINISHED)
+            audio.cancel(true);
+        super.onDestroy();
     }
     
     /** static constructor */
