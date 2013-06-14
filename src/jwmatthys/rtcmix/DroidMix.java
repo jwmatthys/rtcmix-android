@@ -37,7 +37,9 @@ public class DroidMix extends Activity implements OnClickListener
     ScrollView scroller = null;
     Button startSound, endSound, toggleSound;
     boolean isRunning = false;
-    boolean toggleButton = false;
+    boolean scorefileLoaded = false;
+    final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
+    final int codelen = testcode.length();
 
     /** Called when the activity is first created. */
     @Override
@@ -61,7 +63,6 @@ public class DroidMix extends Activity implements OnClickListener
         scroller = (ScrollView)findViewById(R.id.Scroller);
     }
 
-    /*
     @Override
     public void onPause()
     {
@@ -71,7 +72,6 @@ public class DroidMix extends Activity implements OnClickListener
 	endSound.setEnabled(false);
 	startSound.setEnabled(true);
     }
-    */
 
     public void onClick (View v)
     {
@@ -93,17 +93,12 @@ public class DroidMix extends Activity implements OnClickListener
 	    }
 	else if (v == toggleSound)
 	    {
-	    toggleButton = !toggleButton;
-	    if (toggleButton)
-		{
-		    Toast.makeText(getApplicationContext(),
-				   "Noise", Toast.LENGTH_SHORT).show();
-		}
-	    else
-		{
-		    Toast.makeText(getApplicationContext(),
-				   "RTcmix score", Toast.LENGTH_SHORT).show();
-		}
+		if (rtcmix.parse_score(testcode,codelen) == 0)
+		    {
+			scorefileLoaded = true;
+			Toast.makeText(getApplicationContext(),
+				       "RTcmix sample score loaded", Toast.LENGTH_SHORT).show();
+		    }
 	    }
     }
 
@@ -148,9 +143,7 @@ public class DroidMix extends Activity implements OnClickListener
 	    // Initialize RTcmix
 	    if (rtcmix.rtcmixmain() != 0)
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
-	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,buffsize>>1,inbuf,outbuf,errcode); // TODO: figure out stereo
-	    String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
-	    int codelen = testcode.length();
+	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,buffsize>>1,inbuf,outbuf,errcode);
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    
 	    // start audio
@@ -159,24 +152,18 @@ public class DroidMix extends Activity implements OnClickListener
 	    // synthesis loop
 	    while(isRunning)
 		{
-		    if (toggleButton)
-			{
-			    if (rtcmix.parse_score(testcode,codelen) != 0)
-				MyLog.d("DroidMix", "parse_score() failed");
-			    toggleButton = false;
-			    for (int i=0; i < buffsize; i++)
-				samples[i] = (short)0;
-			    audioTrack.write(samples, 0, buffsize);
-			}
-		    else
+		    if (scorefileLoaded)
 			{
 			    outbuf = rtcmix.pullTraverse();
 			    for (int i=0; i < buffsize; i++)
-				{
-				    samples[i] = (short) (outbuf[i]*MAX_AMP);
-				}
-			    audioTrack.write(samples, 0,buffsize);
+				samples[i] = (short) (outbuf[i]*MAX_AMP);
 			}
+		    else
+			{
+			    for (int i=0; i < buffsize; i++)
+				samples[i] = (short)0;
+			}
+		    audioTrack.write(samples, 0, buffsize);
 		}
 	    return null;
 	}

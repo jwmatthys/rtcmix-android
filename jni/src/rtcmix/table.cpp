@@ -199,9 +199,12 @@ _textfile_table(const Arg args[], const int nargs, double *array, const int len)
 			continue;
 		}
 		if (errno == ERANGE)					// overflow or underflow
-			return die("maketable (textfile)",
-						  "A number in the file can't be represented as a double.");
-		array[i] = val;
+		  {
+		    free(stream);
+		    return die("maketable (textfile)",
+			       "A number in the file can't be represented as a double.");
+		    array[i] = val;
+		  }
 	}
 
 	float bogusval;
@@ -343,10 +346,12 @@ _soundfile_table(const Arg args[], const int nargs, double **array, int *len)
  
 	double *block = new double[table_samps];
 	if (block == NULL)
-		return die("maketable (soundfile)", "Not enough memory for table.");
-
+	  {
+	    free(block);
+	    return die("maketable (soundfile)", "Not enough memory for table.");
+	  }
 	int bytes_per_samp = mus_data_format_to_bytes_per_sample(data_format);
-
+	
 	char *buf = new char[BUFSAMPS * bytes_per_samp];
 	if (buf == NULL)
 		return die("maketable (soundfile)",
@@ -1034,6 +1039,7 @@ _spline(const int closed, const float konst, const int nknots, double *outbuf,
 			else {
 				buflen += BUFSIZ;
 				buf = (float *) realloc(buf, buflen * sizeof(float));
+				free(buf);
 				if (buf == NULL)
 					return die("maketable (spline)", "Out of memory.");
 				buf[count++] = yy;

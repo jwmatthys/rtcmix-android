@@ -345,6 +345,7 @@ sndlib_write_header(int  fd,
 
    if (lseek(fd, 0, SEEK_SET) == -1) {
       perror("sndlib_write_header: lseek");
+      free(comment);
       return -1;
    }
 
@@ -849,7 +850,10 @@ sndlib_put_current_header_comment(int    fd,
    /* Formatted comment text passed back in malloc'd <rawcomment>. */
    result = format_raw_comment(&sfc, chans, &rawcomment);
    if (result == -1)
-      return -1;
+     {
+       free(rawcomment);
+       return -1;
+     }
 
    /* Check that file header has enough space allocated for comment.
       Not likely to be a problem, since we pre-allocate enough space
@@ -1108,6 +1112,7 @@ sndlib_findpeak(int    infd,
    buffer = (char *)malloc(bufbytes);
    if (buffer == NULL) {
       perror("sndlib_findpeak: malloc");
+      free(buffer);
       return -1;
    }
 
@@ -1115,6 +1120,7 @@ sndlib_findpeak(int    infd,
       assert(outdataloc >= 0);
       if (lseek(outfd, outdataloc, SEEK_SET) == -1) {
          perror("sndlib_findpeak: lseek");
+	 free(buffer);
          return -1;
       }
    }
@@ -1122,6 +1128,7 @@ sndlib_findpeak(int    infd,
    startbyte = (startframe * nchans * bytespersamp) + indataloc;
    if (lseek(infd, startbyte, SEEK_SET) == -1) {
       perror("sndlib_findpeak: lseek");
+      free(buffer);
       return -1;
    }
 
