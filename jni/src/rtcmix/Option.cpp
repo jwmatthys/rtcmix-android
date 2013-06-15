@@ -285,7 +285,7 @@ int Option::writeConfigFile(const char *fileName)
                                 "the way.\n", fileName);
                 return -1;
         }
-
+	fclose(stream);
         stream = fopen(fileName, "w");
         if (stream == NULL) {
                 fprintf(stderr, "Can't open \"%s\" for writing.\n", fileName);

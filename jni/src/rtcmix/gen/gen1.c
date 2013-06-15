@@ -132,8 +132,10 @@ gen1(struct gen *gen, char *sfname)
 
    buf = (char *) malloc((size_t) BUFSIZE);
    if (buf == NULL)
-      return die("gen1", "Not enough memory for temporary buffer.");
-
+     {
+       free (block);
+       return die("gen1", "Not enough memory for temporary buffer.");
+     }
    bytes_per_samp = mus_data_format_to_bytes_per_sample(data_format);
 
    seek_to = data_location + (start_frame * file_chans * bytes_per_samp);
@@ -141,6 +143,8 @@ gen1(struct gen *gen, char *sfname)
 // BGG mm -- don't exit
 //      perror("gen1 (lseek)");
 //      exit(1);
+     free(buf);
+     free(block);
       return die("gen1", "lseek problem");
    }
 

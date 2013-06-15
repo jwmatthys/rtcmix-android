@@ -79,7 +79,7 @@ enum ConfigStatus {
 struct CheckNode : public RefCounted {
    CheckNode() : bus_list(new short[MAXBUS]), bus_count(0) {}
    CheckNode(short *list, short count) : bus_list(list), bus_count(count) {}
-   ~CheckNode() { MPRINT("CheckNode 0x%x destroyed\n", this); }
+  ~CheckNode() { MPRINT("CheckNode 0x%x destroyed\n", this); }
    short *bus_list;
    short bus_count;
 };

@@ -1138,6 +1138,7 @@ SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_new_1floatp(JNIEn
   (void)jcls;
   result = (float *)new_floatp();
   jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
+  free(result);
   return jresult;
 }
 

@@ -73,6 +73,7 @@ RTcmix::addfunc(
          break;
       default:
          die("addfunc", "invalid function return type");
+	 delete this_node;
          return;
    }
    this_node->return_type = (RTcmixType) return_type;

@@ -200,7 +200,7 @@ _textfile_table(const Arg args[], const int nargs, double *array, const int len)
 		}
 		if (errno == ERANGE)					// overflow or underflow
 		  {
-		    free(stream);
+		    fclose (stream);
 		    return die("maketable (textfile)",
 			       "A number in the file can't be represented as a double.");
 		    array[i] = val;
@@ -347,7 +347,7 @@ _soundfile_table(const Arg args[], const int nargs, double **array, int *len)
 	double *block = new double[table_samps];
 	if (block == NULL)
 	  {
-	    free(block);
+	    delete[] block;
 	    return die("maketable (soundfile)", "Not enough memory for table.");
 	  }
 	int bytes_per_samp = mus_data_format_to_bytes_per_sample(data_format);
@@ -359,7 +359,10 @@ _soundfile_table(const Arg args[], const int nargs, double **array, int *len)
 
 	off_t seek_to = data_location + (start_frame * file_chans * bytes_per_samp);
 	if (lseek(fd, seek_to, SEEK_SET) == -1)
-		return die("maketable (soundfile)", "File seek error: %s", strerror(errno));
+	  {
+	    delete[] buf;
+	    return die("maketable (soundfile)", "File seek error: %s", strerror(errno));
+	  }
 
 #if MUS_LITTLE_ENDIAN
 	bool byteswap = IS_BIG_ENDIAN_FORMAT(data_format);
@@ -977,7 +980,12 @@ _spline(const int closed, const float konst, const int nknots, double *outbuf,
 		float hi1 = (i == nknots - 1) ? x->val[1] - x->val[0]
 										 : x->val[i + 1] - x->val[i];
 		if (hi1 * hi <= 0)
-			return -1;
+		  {
+		    free(buf);
+		    delete[] diag;
+		    delete[] r;
+		    return -1;
+		  }
 		u = i == 1 ? 0.0 : u - s * s / d;
 		v = i == 1 ? 0.0 : v - s * r[i - 1] / d;
 		r[i] = _rhs(i, nknots, x, y) - hi * r[i - 1] / d;
@@ -1039,10 +1047,15 @@ _spline(const int closed, const float konst, const int nknots, double *outbuf,
 			else {
 				buflen += BUFSIZ;
 				buf = (float *) realloc(buf, buflen * sizeof(float));
-				free(buf);
-				if (buf == NULL)
-					return die("maketable (spline)", "Out of memory.");
-				buf[count++] = yy;
+				float *newbuf = static_cast<float*> (realloc(buf, buflen * sizeof(float)));
+				if (newbuf == NULL)
+				  {
+				    delete[] diag;
+				    return die("maketable (spline)", "Out of memory.");
+				  }
+				  else
+				    buf = newbuf;
+				  buf[count++] = yy;
 			}
 		}
 	}
@@ -2061,15 +2074,26 @@ plottable(const Arg args[], const int nargs)
 
 	FILE *fdata = fopen(data_file, "w");
 	FILE *fcmd = fopen(cmd_file, "w");
-	if (fdata == NULL || fcmd == NULL)
-		return die("plottable", "Can't open temp files for gnuplot.");
+	if (fdata == NULL)
+	  {
+	    fclose (fcmd);
+	    return die("plottable", "Can't open temp files for gnuplot.");
+	  }
+
+	if (fcmd == NULL)
+	  {
+	    fclose (fdata);
+	    return die("plottable", "Can't open temp files for gnuplot.");
+	  }
 
 	int chars = table->print(fdata);
 	fclose(fdata);
 	
 	if (chars <= 0)
-		return die("plottable", "Cannot print this kind of table");
-
+	  {
+	    fclose(fcmd);
+	    return die("plottable", "Cannot print this kind of table");
+	  }
 	fprintf(fcmd, 
 #ifdef MACOSX	// NB: requires installation of Aquaterm and gnuplot >=3.8
 		"set term aqua %d\n"
