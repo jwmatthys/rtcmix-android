@@ -18,6 +18,7 @@ package jwmatthys.rtcmix;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.AsyncTask;
+//import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -28,14 +29,15 @@ import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.widget.Toast;
-import java.util.Random;
+//import java.util.Random;
 
 public class DroidMix extends Activity implements OnClickListener
 {
     AudioSynthesisTask audio;
+    //private Handler mHandler = new Handler();
     TextView outputText = null;
     ScrollView scroller = null;
-    Button startSound, endSound, sampleSound;
+    Button startSound, endSound, sampleSound, loadSound;
     boolean isRunning = false;
     boolean scorefileLoaded = false;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
@@ -51,10 +53,13 @@ public class DroidMix extends Activity implements OnClickListener
 	startSound = (Button) this.findViewById(R.id.StartSound);
 	endSound = (Button) this.findViewById(R.id.EndSound);
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
+	loadSound = (Button) this.findViewById(R.id.LoadSound);
 	startSound.setOnClickListener(this);
 	endSound.setOnClickListener(this);
 	sampleSound.setOnClickListener(this);
+	loadSound.setOnClickListener(this);
 	sampleSound.setEnabled(false);
+	loadSound.setEnabled(false);
 	endSound.setEnabled(false);
 
         outputText = (TextView)findViewById(R.id.OutputText);
@@ -64,12 +69,19 @@ public class DroidMix extends Activity implements OnClickListener
     }
 
     @Override
+    public void onBackPressed() {
+	android.os.Process.killProcess(android.os.Process.myPid());
+    }
+
+    @Override
     public void onPause()
     {
 	super.onPause();
 	isRunning = false;
 
 	endSound.setEnabled(false);
+	sampleSound.setEnabled(false);
+	loadSound.setEnabled(false);
 	startSound.setEnabled(true);
     }
 
@@ -77,18 +89,35 @@ public class DroidMix extends Activity implements OnClickListener
     {
 	if (v == startSound)
 	    {
-		isRunning = true;
-		audio = new AudioSynthesisTask();
-		audio.execute();
+		startSound.setEnabled(false);
 		endSound.setEnabled(true);
 		sampleSound.setEnabled(true);
-		startSound.setEnabled(false);
+		loadSound.setEnabled(true);
+		//Toast.makeText(getApplicationContext(),
+		//	       "Starting RTcmix...", Toast.LENGTH_SHORT).show();
+		isRunning = true;
+
+		if (audio != null)
+		    audio.cancel(true);
+
+		audio = new AudioSynthesisTask();
+		audio.execute();
+		/*mHandler.postDelayed(new Runnable()
+		    {
+			public void run()
+			{
+			    endSound.setEnabled(true);
+			    sampleSound.setEnabled(true);
+			    loadSound.setEnabled(true);
+			}
+			}, 5000);*/
 	    }
 	else if (v == endSound)
 	    {
 		isRunning = false;
 		endSound.setEnabled(false);
 		sampleSound.setEnabled(false);
+		loadSound.setEnabled(false);
 		startSound.setEnabled(true);
 	    }
 	else if (v == sampleSound)
@@ -100,6 +129,11 @@ public class DroidMix extends Activity implements OnClickListener
 				       "RTcmix sample score loaded", Toast.LENGTH_SHORT).show();
 		    }
 	    }
+	else if (v == loadSound)
+	    {
+		Toast.makeText(getApplicationContext(),
+			       "Load RTcmix scorefile (unimplemented)", Toast.LENGTH_SHORT).show();
+	    }
     }
 
     private class AudioSynthesisTask extends AsyncTask <Void, Void, Boolean>
@@ -108,7 +142,6 @@ public class DroidMix extends Activity implements OnClickListener
 	    protected Boolean doInBackground(Void... params)
 	{
 	    Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-	    Random freq = new Random();
 	    final int SAMPLE_RATE = 22050;
 	    final int RTCMIX_BUFSIZE = 1024;
 	    int buffsize = AudioTrack.getMinBufferSize(SAMPLE_RATE,
@@ -156,7 +189,7 @@ public class DroidMix extends Activity implements OnClickListener
 	    audioTrack.play();
 
 	    final int OUTBUFSIZE = outbuf.length;
-
+	    
 	    // synthesis loop
 	    while(isRunning)
 		{
@@ -173,6 +206,10 @@ public class DroidMix extends Activity implements OnClickListener
 		    else
 			audioTrack.write(silence, 0, buffsize);
 		}
+	    inbuf = null;
+	    outbuf = null;
+	    silence = null;
+	    samples = null;
 	    return null;
 	}
     }
