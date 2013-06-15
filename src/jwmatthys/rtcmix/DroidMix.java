@@ -37,7 +37,7 @@ public class DroidMix extends Activity implements OnClickListener
     //private Handler mHandler = new Handler();
     TextView outputText = null;
     ScrollView scroller = null;
-    Button startSound, endSound, sampleSound, loadSound;
+    Button sampleSound, loadSound;
     boolean isRunning = false;
     boolean scorefileLoaded = false;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
@@ -50,22 +50,21 @@ public class DroidMix extends Activity implements OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-	startSound = (Button) this.findViewById(R.id.StartSound);
-	endSound = (Button) this.findViewById(R.id.EndSound);
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	loadSound = (Button) this.findViewById(R.id.LoadSound);
-	startSound.setOnClickListener(this);
-	endSound.setOnClickListener(this);
 	sampleSound.setOnClickListener(this);
 	loadSound.setOnClickListener(this);
-	sampleSound.setEnabled(false);
-	loadSound.setEnabled(false);
-	endSound.setEnabled(false);
+	//sampleSound.setEnabled(false);
+	//loadSound.setEnabled(false);
+
 
         outputText = (TextView)findViewById(R.id.OutputText);
-        outputText.setText("Press Start to initialize sound.\n");
+        //outputText.setText("Press Start to initialize sound.\n");
         outputText.setMovementMethod(new ScrollingMovementMethod());	
         scroller = (ScrollView)findViewById(R.id.Scroller);
+
+	audio = new AudioSynthesisTask();
+	audio.execute();
     }
 
     @Override
@@ -79,14 +78,15 @@ public class DroidMix extends Activity implements OnClickListener
 	super.onPause();
 	isRunning = false;
 
-	endSound.setEnabled(false);
-	sampleSound.setEnabled(false);
-	loadSound.setEnabled(false);
-	startSound.setEnabled(true);
+	//endSound.setEnabled(false);
+	//sampleSound.setEnabled(false);
+	//loadSound.setEnabled(false);
+	//startSound.setEnabled(true);
     }
 
     public void onClick (View v)
     {
+	/*
 	if (v == startSound)
 	    {
 		startSound.setEnabled(false);
@@ -96,12 +96,6 @@ public class DroidMix extends Activity implements OnClickListener
 		//Toast.makeText(getApplicationContext(),
 		//	       "Starting RTcmix...", Toast.LENGTH_SHORT).show();
 		isRunning = true;
-
-		if (audio != null)
-		    audio.cancel(true);
-
-		audio = new AudioSynthesisTask();
-		audio.execute();
 		/*mHandler.postDelayed(new Runnable()
 		    {
 			public void run()
@@ -110,7 +104,7 @@ public class DroidMix extends Activity implements OnClickListener
 			    sampleSound.setEnabled(true);
 			    loadSound.setEnabled(true);
 			}
-			}, 5000);*/
+			}, 5000);
 	    }
 	else if (v == endSound)
 	    {
@@ -120,7 +114,7 @@ public class DroidMix extends Activity implements OnClickListener
 		loadSound.setEnabled(false);
 		startSound.setEnabled(true);
 	    }
-	else if (v == sampleSound)
+	else*/ if (v == sampleSound)
 	    {
 		if (rtcmix.parse_score(testcode,codelen) == 0)
 		    {
@@ -158,12 +152,16 @@ public class DroidMix extends Activity implements OnClickListener
 	    final int MAX_AMP = Short.MAX_VALUE;
 	    float inbuf[] = new float[RTCMIX_BUFSIZE<<1];
 	    float outbuf[] = new float[RTCMIX_BUFSIZE<<1];
+	    float foobuf[] = new float[RTCMIX_BUFSIZE<<1];
+	    float barbuf[] = new float[RTCMIX_BUFSIZE<<1];
 	    short samples[] = new short[buffsize];
 	    short silence[] = new short[buffsize];
 	    for (int i=0; i<outbuf.length; i++)
 		{
 		    inbuf[i]=0.f;
 		    outbuf[i]=0.f;
+		    foobuf[i]=0.f;
+		    barbuf[i]=0.f;
 		    //samples[i]=(short)0;
 		}
 	    // Hey, why keep rewriting zeros to make silence?
@@ -182,7 +180,7 @@ public class DroidMix extends Activity implements OnClickListener
 	    // Initialize RTcmix
 	    if (rtcmix.rtcmixmain() != 0)
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
-	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE,inbuf,outbuf,errcode);
+	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE,foobuf,barbuf,errcode);
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    
 	    // start audio
@@ -190,6 +188,8 @@ public class DroidMix extends Activity implements OnClickListener
 
 	    final int OUTBUFSIZE = outbuf.length;
 	    
+	    isRunning = true;
+
 	    // synthesis loop
 	    while(isRunning)
 		{
