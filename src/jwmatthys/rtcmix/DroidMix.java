@@ -110,6 +110,7 @@ public class DroidMix extends Activity implements OnClickListener
 	    Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 	    Random freq = new Random();
 	    final int SAMPLE_RATE = 22050;
+	    final int RTCMIX_BUFSIZE = 1024;
 	    int buffsize = AudioTrack.getMinBufferSize(SAMPLE_RATE,
 						       AudioFormat.CHANNEL_OUT_STEREO,
 						       AudioFormat.ENCODING_PCM_16BIT);
@@ -122,15 +123,20 @@ public class DroidMix extends Activity implements OnClickListener
 		});
 	    buffsize = buffsize << 1; // might as well double it now
 	    final int MAX_AMP = Short.MAX_VALUE;
-	    float inbuf[] = new float[buffsize];
-	    float outbuf[] = new float[buffsize];
+	    float inbuf[] = new float[RTCMIX_BUFSIZE<<1];
+	    float outbuf[] = new float[RTCMIX_BUFSIZE<<1];
 	    short samples[] = new short[buffsize];
-	    for (int i=0; i<buffsize; i++)
+	    short silence[] = new short[buffsize];
+	    for (int i=0; i<outbuf.length; i++)
 		{
 		    inbuf[i]=0.f;
 		    outbuf[i]=0.f;
-		    samples[i]=(short)0;
+		    //samples[i]=(short)0;
 		}
+	    // Hey, why keep rewriting zeros to make silence?
+	    for (int i=0; i<buffsize; i++)
+		silence[i]=(short)0;
+
 	    String errcode = "";
 	    
 	    AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
@@ -143,27 +149,29 @@ public class DroidMix extends Activity implements OnClickListener
 	    // Initialize RTcmix
 	    if (rtcmix.rtcmixmain() != 0)
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
-	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,buffsize>>1,inbuf,outbuf,errcode);
+	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE,inbuf,outbuf,errcode);
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    
 	    // start audio
 	    audioTrack.play();
+
+	    final int OUTBUFSIZE = outbuf.length;
 
 	    // synthesis loop
 	    while(isRunning)
 		{
 		    if (scorefileLoaded)
 			{
-			    outbuf = rtcmix.pullTraverse();
 			    for (int i=0; i < buffsize; i++)
-				samples[i] = (short) (outbuf[i]*MAX_AMP);
+				{
+				    if (i % OUTBUFSIZE == 0)
+					outbuf = rtcmix.pullTraverse();
+				    samples[i] = (short) (outbuf[i % OUTBUFSIZE]*MAX_AMP);
+				}
+			    audioTrack.write(samples, 0, buffsize);
 			}
 		    else
-			{
-			    for (int i=0; i < buffsize; i++)
-				samples[i] = (short)0;
-			}
-		    audioTrack.write(samples, 0, buffsize);
+			audioTrack.write(silence, 0, buffsize);
 		}
 	    return null;
 	}
@@ -171,9 +179,9 @@ public class DroidMix extends Activity implements OnClickListener
 
     public void onDestroy()
     {
-	isRunning = false;
 	if (audio != null && audio.getStatus() != AsyncTask.Status.FINISHED)
             audio.cancel(true);
+	isRunning = false;
         super.onDestroy();
     }
     
