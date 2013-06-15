@@ -35,7 +35,7 @@ public class DroidMix extends Activity implements OnClickListener
     AudioSynthesisTask audio;
     TextView outputText = null;
     ScrollView scroller = null;
-    Button startSound, endSound, toggleSound;
+    Button startSound, endSound, sampleSound;
     boolean isRunning = false;
     boolean scorefileLoaded = false;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
@@ -50,11 +50,11 @@ public class DroidMix extends Activity implements OnClickListener
 
 	startSound = (Button) this.findViewById(R.id.StartSound);
 	endSound = (Button) this.findViewById(R.id.EndSound);
-	toggleSound = (Button) this.findViewById(R.id.ToggleSound);
+	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	startSound.setOnClickListener(this);
 	endSound.setOnClickListener(this);
-	toggleSound.setOnClickListener(this);
-	toggleSound.setEnabled(false);
+	sampleSound.setOnClickListener(this);
+	sampleSound.setEnabled(false);
 	endSound.setEnabled(false);
 
         outputText = (TextView)findViewById(R.id.OutputText);
@@ -81,17 +81,17 @@ public class DroidMix extends Activity implements OnClickListener
 		audio = new AudioSynthesisTask();
 		audio.execute();
 		endSound.setEnabled(true);
-		toggleSound.setEnabled(true);
+		sampleSound.setEnabled(true);
 		startSound.setEnabled(false);
 	    }
 	else if (v == endSound)
 	    {
 		isRunning = false;
 		endSound.setEnabled(false);
-		toggleSound.setEnabled(false);
+		sampleSound.setEnabled(false);
 		startSound.setEnabled(true);
 	    }
-	else if (v == toggleSound)
+	else if (v == sampleSound)
 	    {
 		if (rtcmix.parse_score(testcode,codelen) == 0)
 		    {

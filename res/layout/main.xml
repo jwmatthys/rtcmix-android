@@ -17,10 +17,10 @@
     android:text="End Audio"  
     />
 <Button
-    android:id="@+id/ToggleSound"
+    android:id="@+id/SampleSound"
     android:layout_width="wrap_content"  
     android:layout_height="wrap_content"  
-    android:text="Toggle Noise/RTcmix"  
+    android:text="Play RTcmix Sample"  
     />
 <ScrollView
     android:id="@+id/Scroller"
