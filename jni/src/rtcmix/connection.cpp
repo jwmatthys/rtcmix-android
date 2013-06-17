@@ -78,7 +78,10 @@ makeconnection(const Arg args[], const int nargs)
 // can't use the 'normal' create_pfield() because of conflict with
 // inletglue.cpp function (dyn loading keeps tehm separate, but we
 // don't dynlaod in max/msp
-	if (args[0] == "inlet") {
+
+// JWM: "inlet" doesn't make much sense on Android, but it will act
+// the same way
+	if (args[0] == "inlet" || args[0] == "android") {
 		handle = create_handle(&args[1], nargs-1);
 	} else if(args[0] == "pfbus") {
 		handle = create_pfbus_handle(&args[1], nargs-1);
