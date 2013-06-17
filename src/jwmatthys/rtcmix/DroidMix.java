@@ -146,6 +146,7 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 		audio = new AudioSynthesisTask();
 		audio.execute();
 		startSound.setEnabled(false);
+		sampleRateSpinner.setEnabled(false);
 		sampleSound.setEnabled(true);
 		loadSound.setEnabled(true);
 		flushSound.setEnabled(true);

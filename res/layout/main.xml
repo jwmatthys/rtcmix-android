@@ -52,6 +52,7 @@
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:layout_below="@+id/PField"
+      android:background="#7b1664"
       >
     <TextView
 	android:id="@+id/OutputText"
