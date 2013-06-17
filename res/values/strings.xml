@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DroidMix</string>
+    <string name="sr_prompt">Choose a sample rate</string>
+
+    <string-array name="sample_rates">
+      <item>44100</item>
+      <item>22050</item>
+      <item>11025</item>
+      <item>8000</item>
+    </string-array>
+
 </resources>

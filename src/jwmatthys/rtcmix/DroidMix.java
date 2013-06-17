@@ -30,11 +30,14 @@ import android.os.AsyncTask;
 //import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.Spinner;
 import android.text.method.ScrollingMovementMethod;
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -43,16 +46,18 @@ import android.widget.Toast;
 //import java.util.Random;
 import ar.com.daidalos.afiledialog.*;
 
-public class DroidMix extends Activity implements OnClickListener, OnSeekBarChangeListener
+public class DroidMix extends Activity implements OnClickListener, OnSeekBarChangeListener, OnItemSelectedListener
 {
     AudioSynthesisTask audio;
     //private Handler mHandler = new Handler();
     TextView outputText = null;
     ScrollView scroller = null;
-    Button sampleSound, loadSound;
-    SeekBar pfSeekBar;
+    private Button startSound, sampleSound, loadSound;
+    private SeekBar pfSeekBar;
+    Spinner sampleRateSpinner;
     boolean isRunning = false;
     boolean scorefileLoaded = false;
+    int chosen_samplerate = 8000;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
     final int codelen = testcode.length();
 
@@ -63,23 +68,25 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+	sampleRateSpinner = (Spinner) findViewById(R.id.PickSR);
+	startSound = (Button) this.findViewById(R.id.StartSound);
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	loadSound = (Button) this.findViewById(R.id.LoadSound);
 	pfSeekBar = (SeekBar) findViewById(R.id.PField);
 	pfSeekBar.setOnSeekBarChangeListener(this);
+	startSound.setOnClickListener(this);
 	sampleSound.setOnClickListener(this);
 	loadSound.setOnClickListener(this);
-	//sampleSound.setEnabled(false);
-	//loadSound.setEnabled(false);
+	sampleRateSpinner.setSelection(1);
+	sampleRateSpinner.setOnItemSelectedListener(this);
+	sampleSound.setEnabled(false);
+	loadSound.setEnabled(false);
 
 
         outputText = (TextView)findViewById(R.id.OutputText);
         //outputText.setText("Press Start to initialize sound.\n");
         outputText.setMovementMethod(new ScrollingMovementMethod());	
         scroller = (ScrollView)findViewById(R.id.Scroller);
-
-	audio = new AudioSynthesisTask();
-	audio.execute();
     }
 
     @Override
@@ -99,8 +106,7 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser)
     {
-        //Toast.makeText(DroidMix.this, "Seekbar Value : " + progress, Toast.LENGTH_SHORT).show();
-		rtcmix.pfield_set(1,progress*5+200);
+	rtcmix.pfield_set(1,progress*5+200);
     }
     
     @Override
@@ -112,15 +118,38 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     @Override
     public void onStopTrackingTouch(SeekBar seekBar)
     {
-        pfSeekBar.setSecondaryProgress(seekBar.getProgress());
+        //pfSeekBar.setSecondaryProgress(seekBar.getProgress());
         //Toast.makeText(DroidMix.this, "Stopped Tracking Seekbar", Toast.LENGTH_SHORT).show();
     }
 
+    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id)
+    {
+	{
+	    Toast.makeText(getApplicationContext(),
+			   "SR chosen: "+parent.getItemAtPosition(pos).toString(), Toast.LENGTH_SHORT).show();
+	    try {
+		chosen_samplerate = Integer.parseInt(parent.getItemAtPosition(pos).toString());
+	    } catch (NumberFormatException nfe)
+		{}
+	}		
+    }
 
+    public void onNothingSelected(AdapterView<?> parent)
+    {
+	// A thing is here that does a thing, or no thing.
+    }
 
     public void onClick (View v)
     {
-	if (v == sampleSound)
+	if (v == startSound)
+	    {
+		audio = new AudioSynthesisTask();
+		audio.execute();
+		sampleSound.setEnabled(true);
+		loadSound.setEnabled(true);
+	    }		
+
+       	if (v == sampleSound)
 	    {
 		if (rtcmix.parse_score(testcode,codelen) == 0)
 		    {
@@ -210,11 +239,13 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 	    protected Boolean doInBackground(Void... params)
 	{
 	    Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-	    final int SAMPLE_RATE = 22050;
+	    final int SAMPLE_RATE = chosen_samplerate;
 	    final int RTCMIX_BUFSIZE = 1024;
-	    int buffsize = AudioTrack.getMinBufferSize(SAMPLE_RATE,
+	    int temp_buffsize = AudioTrack.getMinBufferSize(SAMPLE_RATE,
 						       AudioFormat.CHANNEL_OUT_STEREO,
 						       AudioFormat.ENCODING_PCM_16BIT);
+	    int buffsize = 1;
+	    while (buffsize < temp_buffsize) buffsize = buffsize << 1;
 	    final String buffmsg = "buffsize: "+buffsize;
 	    runOnUiThread(new Runnable() {
 		    public void run() {
