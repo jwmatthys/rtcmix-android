@@ -124,8 +124,6 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id)
     {
 	{
-	    Toast.makeText(getApplicationContext(),
-			   "SR chosen: "+parent.getItemAtPosition(pos).toString(), Toast.LENGTH_SHORT).show();
 	    try {
 		chosen_samplerate = Integer.parseInt(parent.getItemAtPosition(pos).toString());
 	    } catch (NumberFormatException nfe)
@@ -245,11 +243,11 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 						       AudioFormat.ENCODING_PCM_16BIT);
 	    int buffsize = 1;
 	    while (buffsize < temp_buffsize) buffsize = buffsize << 1;
-	    final String buffmsg = "buffsize: "+buffsize;
+	    final String buffmsg = "RTcmix started. Sample rate: "+SAMPLE_RATE+", Buffer size: "+buffsize;
 	    runOnUiThread(new Runnable() {
 		    public void run() {
 			
-			Toast.makeText(DroidMix.this, buffmsg, Toast.LENGTH_SHORT).show();
+			Toast.makeText(DroidMix.this, buffmsg, Toast.LENGTH_LONG).show();
 		    }
 		});
 	    buffsize = buffsize << 1; // might as well double it now
