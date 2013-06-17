@@ -11,6 +11,7 @@
 #include <rtcmix_types.h>
 #define SWIGJAVA
 #define FillMeInAsSizeCannotBeDeterminedAutomatically 16384
+
 /* -----------------------------------------------------------------------------
  *  This section contains generic SWIG labels for method/variable
  *  declarations/attributes, and other compiler dependent labels.
@@ -791,9 +792,9 @@ static void floatArray_setitem(float *ary, int index, float value) {
 
 
   extern int rtcmixmain();
-  extern int pd_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float *mm_outbuf, char *mm_errbuf);
+  extern int droid_rtsetparams(float sr, int nchans, int vecsize);
   extern int parse_score(char *thebuf, int buflen);
-  extern float* pullTraverse();
+  extern float* pullTraverse(float* inbuf);
   extern int check_bang();
   extern int check_vals(float thevals[]);
   extern int parse_dispatch(const char *funcname, const Arg arglist[], const int n_args, Arg *return_val);
@@ -950,16 +951,11 @@ SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_rtcmixmain(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pd_1rtsetparams(JNIEnv *jenv, jclass jcls, jfloat jarg1, jint jarg2, jint jarg3, jfloatArray jarg4, jfloatArray jarg5, jstring jarg6) {
+SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_droid_1rtsetparams(JNIEnv *jenv, jclass jcls, jfloat jarg1, jint jarg2, jint jarg3) {
   jint jresult = 0 ;
   float arg1 ;
   int arg2 ;
   int arg3 ;
-  float *arg4 = (float *) 0 ;
-  float *arg5 = (float *) 0 ;
-  char *arg6 = (char *) 0 ;
-  jfloat *jarr4 ;
-  jfloat *jarr5 ;
   int result;
   
   (void)jenv;
@@ -967,20 +963,8 @@ SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pd_1rtsetparams(JNIEnv *
   arg1 = (float)jarg1; 
   arg2 = (int)jarg2; 
   arg3 = (int)jarg3; 
-  if (!SWIG_JavaArrayInFloat(jenv, &jarr4, &arg4, jarg4)) return 0; 
-  if (!SWIG_JavaArrayInFloat(jenv, &jarr5, &arg5, jarg5)) return 0; 
-  arg6 = 0;
-  if (jarg6) {
-    arg6 = (char *)(*jenv)->GetStringUTFChars(jenv, jarg6, 0);
-    if (!arg6) return 0;
-  }
-  result = (int)pd_rtsetparams(arg1,arg2,arg3,arg4,arg5,arg6);
+  result = (int)droid_rtsetparams(arg1,arg2,arg3);
   jresult = (jint)result; 
-  SWIG_JavaArrayArgoutFloat(jenv, jarr4, arg4, jarg4); 
-  SWIG_JavaArrayArgoutFloat(jenv, jarr5, arg5, jarg5); 
-  free(arg4); 
-  free(arg5); 
-  if (arg6) (*jenv)->ReleaseStringUTFChars(jenv, jarg6, (const char *)arg6);
   return jresult;
 }
 
@@ -1006,14 +990,19 @@ SWIGEXPORT jint JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_parse_1score(JNIEnv *jen
 }
 
 
-SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pullTraverse(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_pullTraverse(JNIEnv *jenv, jclass jcls, jfloatArray jarg1) {
   jfloatArray jresult = 0 ;
+  float *arg1 = (float *) 0 ;
+  jfloat *jarr1 ;
   float *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (float *)pullTraverse();
+  if (!SWIG_JavaArrayInFloat(jenv, &jarr1, &arg1, jarg1)) return 0; 
+  result = (float *)pullTraverse(arg1);
   jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
+  SWIG_JavaArrayArgoutFloat(jenv, jarr1, arg1, jarg1); 
+  free(arg1); 
   return jresult;
 }
 
@@ -1138,7 +1127,6 @@ SWIGEXPORT jfloatArray JNICALL Java_jwmatthys_rtcmix_rtcmixJNI_new_1floatp(JNIEn
   (void)jcls;
   result = (float *)new_floatp();
   jresult = SWIG_JavaArrayOutFloat(jenv, result, FillMeInAsSizeCannotBeDeterminedAutomatically); 
-  free(result);
   return jresult;
 }
 

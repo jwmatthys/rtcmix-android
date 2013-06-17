@@ -18,9 +18,9 @@ public class rtcmixJNI {
   public final static native float floatArray_getitem(long jarg1, int jarg2);
   public final static native void floatArray_setitem(long jarg1, int jarg2, float jarg3);
   public final static native int rtcmixmain();
-  public final static native int pd_rtsetparams(float jarg1, int jarg2, int jarg3, float[] jarg4, float[] jarg5, String jarg6);
+  public final static native int droid_rtsetparams(float jarg1, int jarg2, int jarg3);
   public final static native int parse_score(String jarg1, int jarg2);
-  public final static native float[] pullTraverse();
+  public final static native float[] pullTraverse(float[] jarg1);
   public final static native int check_bang();
   public final static native int check_vals(float[] jarg1);
   public final static native int parse_dispatch(String jarg1, long jarg2, int jarg3, long jarg4);

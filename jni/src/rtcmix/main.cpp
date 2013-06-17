@@ -82,6 +82,8 @@ rtcmixmain()	// BGG mm -- now called this for max/msp
 // the *_ready value to signal to return something other than NULL
 // max/msp will then respond accordingly
 extern float *maxmsp_outbuf; // set in mm_rtsetparams()
+extern float *maxmsp_inbuf; // set in mm_rtsetparams()
+
 int bang_ready = 0;
 
 int check_bang()
@@ -130,21 +132,29 @@ int check_error()
    }
 }
 
-float* pullTraverse()
+float* pullTraverse(float* droid_inbuf)
 {
-        app->inTraverse(NULL, NULL);
-		return maxmsp_outbuf;
+  maxmsp_inbuf = droid_inbuf;
+  app->inTraverse(NULL, NULL);
+  return maxmsp_outbuf;
 }
 
 int pd_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float *mm_outbuf, char *mm_errbuf)
 {
-        int status;
-
-        status = (int)app->mm_rtsetparams(sr, nchans, vecsize, mm_inbuf, mm_outbuf, mm_errbuf);
-
-        return(status);
+  int status;
+  
+  status = (int)app->mm_rtsetparams(sr, nchans, vecsize, mm_inbuf, mm_outbuf, mm_errbuf);
+  
+  return(status);
 }
-
+  
+  int droid_rtsetparams(float sr, int nchans, int vecsize)
+  {
+    int status;
+    status = (int)app->mm_rtsetparams(sr, nchans, vecsize, NULL, NULL, NULL);
+    return(status);
+  }
+  
 
 // these are set from inlets on the rtcmix~ object, using PFields to
 // control the Instruments

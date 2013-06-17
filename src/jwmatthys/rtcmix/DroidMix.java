@@ -260,7 +260,7 @@ public class DroidMix extends Activity implements OnClickListener
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
 	    // No pass-by-pointer in Java (JAVA!!) so no need to specify buffers here
 	    // (Changed in JNI source in mm_rtsetparams.cpp)
-	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE,foobuf,barbuf,errcode);
+	    rtcmix.droid_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE);
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    
 	    // start audio
@@ -278,7 +278,7 @@ public class DroidMix extends Activity implements OnClickListener
 			    for (int i=0; i < buffsize; i++)
 				{
 				    if (i % OUTBUFSIZE == 0)
-					outbuf = rtcmix.pullTraverse();
+					outbuf = rtcmix.pullTraverse(inbuf);
 				    samples[i] = (short) (outbuf[i % OUTBUFSIZE]*MAX_AMP);
 				}
 			    audioTrack.write(samples, 0, buffsize);

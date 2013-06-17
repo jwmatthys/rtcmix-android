@@ -47,16 +47,16 @@ public class rtcmix {
     return rtcmixJNI.rtcmixmain();
   }
 
-  public static int pd_rtsetparams(float sr, int nchans, int vecsize, float[] mm_inbuf, float[] mm_outbuf, String mm_errbuf) {
-    return rtcmixJNI.pd_rtsetparams(sr, nchans, vecsize, mm_inbuf, mm_outbuf, mm_errbuf);
+  public static int droid_rtsetparams(float sr, int nchans, int vecsize) {
+    return rtcmixJNI.droid_rtsetparams(sr, nchans, vecsize);
   }
 
   public static int parse_score(String thebuf, int buflen) {
     return rtcmixJNI.parse_score(thebuf, buflen);
   }
 
-  public static float[] pullTraverse() {
-    return rtcmixJNI.pullTraverse();
+  public static float[] pullTraverse(float[] inbuf) {
+    return rtcmixJNI.pullTraverse(inbuf);
   }
 
   public static int check_bang() {

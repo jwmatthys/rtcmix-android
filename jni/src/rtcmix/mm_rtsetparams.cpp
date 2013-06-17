@@ -77,7 +77,7 @@ RTcmix::mm_rtsetparams(float sr, int nchans, int vecsize, float *mm_inbuf, float
 
    // JWM: Android can't return the outbuf by pointer (Java!!) so there's no need
    // to pass the pointer at init. So instead we'll allocate memory for it.
-   maxmsp_inbuf = new float[RTBUFSAMPS * NCHANS];
+   //maxmsp_inbuf = new float[RTBUFSAMPS * NCHANS];
    maxmsp_outbuf = new float[RTBUFSAMPS * NCHANS];
 
    int numBuffers = Option::bufferCount();
