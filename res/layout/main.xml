@@ -5,22 +5,16 @@
     android:layout_height="fill_parent"
     >
 <Button
-    android:id="@+id/StartSound"  
-    android:layout_width="wrap_content"  
-    android:layout_height="wrap_content"  
-    android:text="Start Audio"  
-    />
-<Button
-    android:id="@+id/EndSound"
-    android:layout_width="wrap_content"  
-    android:layout_height="wrap_content"  
-    android:text="End Audio"  
-    />
-<Button
     android:id="@+id/SampleSound"
     android:layout_width="wrap_content"  
     android:layout_height="wrap_content"  
     android:text="Play RTcmix Sample"  
+    />
+<Button
+    android:id="@+id/LoadSound"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:text="Load RTcmix Scorefile"  
     />
 <ScrollView
     android:id="@+id/Scroller"

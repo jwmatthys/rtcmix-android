@@ -5,6 +5,7 @@
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="10" />
     <application android:label="@string/app_name"
+		 android:icon="@drawable/rtcmixicon"
                  android:debuggable="true">
         <activity android:name=".DroidMix"
                   android:label="@string/app_name">

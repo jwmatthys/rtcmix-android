@@ -17,6 +17,15 @@ package jwmatthys.rtcmix;
 
 import android.app.Activity;
 import android.os.Bundle;
+import java.io.File;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
+import android.app.Dialog;
 import android.os.AsyncTask;
 //import android.os.Handler;
 import android.view.View;
@@ -30,6 +39,7 @@ import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.widget.Toast;
 //import java.util.Random;
+import ar.com.daidalos.afiledialog.*;
 
 public class DroidMix extends Activity implements OnClickListener
 {
@@ -125,11 +135,79 @@ public class DroidMix extends Activity implements OnClickListener
 	    }
 	else if (v == loadSound)
 	    {
-		Toast.makeText(getApplicationContext(),
-			       "Load RTcmix scorefile (unimplemented)", Toast.LENGTH_SHORT).show();
+    		FileChooserDialog dialog = new FileChooserDialog(DroidMix.this);
+		
+    		// Assign listener for the select event.
+    		dialog.addListener(DroidMix.this.onFileSelectedListener);
+		
+    		// Define the filter for select images.
+    		dialog.setFilter(".*sco|.*SCO");
+    		dialog.setShowOnlySelectable(false);
+    		
+    		// Show the dialog.
+		dialog.show();
+	
+		//Toast.makeText(getApplicationContext(),
+		//"Load RTcmix scorefile (unimplemented)", Toast.LENGTH_SHORT).show();
 	    }
     }
+    
+    private void openRTcmixFile(File score)
+    {
+	String rtcmixScore = "";
+	try {
+	    FileInputStream fis = new FileInputStream(score);
+	    StringBuilder inputStringBuilder = new StringBuilder();
+	    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+	    String line = bufferedReader.readLine();
+	    while(line != null){
+		inputStringBuilder.append(line);inputStringBuilder.append('\n');
+		line = bufferedReader.readLine();
+	    }
+	    rtcmixScore = inputStringBuilder.toString();
+	}
+	catch (FileNotFoundException fnfe)
+	    {
+		MyLog.d("DroidMix", fnfe.getMessage());
+	    }
+	catch (IOException ioe)
+	    {
+		MyLog.d("DroidMix", ioe.getMessage());
+	    }
+	
+	if (rtcmix.parse_score(rtcmixScore,rtcmixScore.length()) == 0)
+	    {
+		scorefileLoaded = true;
+		outputText.setText(rtcmixScore);
+	    }
+        scroller = (ScrollView)findViewById(R.id.Scroller);
+    }
 
+    public static String convertStreamToString(InputStream is) throws Exception {
+	BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+	StringBuilder sb = new StringBuilder();
+	String line = null;
+	while ((line = reader.readLine()) != null) {
+	    sb.append(line).append("\n");
+	}
+	return sb.toString();
+    }
+    
+    private FileChooserDialog.OnFileSelectedListener onFileSelectedListener = new FileChooserDialog.OnFileSelectedListener() 
+	{
+	    public void onFileSelected(Dialog source, File file) {
+		source.hide();
+		Toast toast = Toast.makeText(DroidMix.this, "File selected: " + file.getName(), Toast.LENGTH_LONG);
+		toast.show();
+		openRTcmixFile(file);
+	    }
+	    public void onFileSelected(Dialog source, File folder, String name) {
+		source.hide();
+		Toast toast = Toast.makeText(DroidMix.this, "File created: " + folder.getName() + "/" + name, Toast.LENGTH_LONG);
+		toast.show();
+	    }
+	};
+    
     private class AudioSynthesisTask extends AsyncTask <Void, Void, Boolean>
     {
 	@Override
@@ -180,6 +258,8 @@ public class DroidMix extends Activity implements OnClickListener
 	    // Initialize RTcmix
 	    if (rtcmix.rtcmixmain() != 0)
 		MyLog.d("DroidMix", "rtcmixmain() failed to load");
+	    // No pass-by-pointer in Java (JAVA!!) so no need to specify buffers here
+	    // (Changed in JNI source in mm_rtsetparams.cpp)
 	    rtcmix.pd_rtsetparams(SAMPLE_RATE,2,RTCMIX_BUFSIZE,foobuf,barbuf,errcode);
 	    MyLog.d("DroidMix", "testcode: "+testcode+"\nlength: "+codelen);
 	    
@@ -228,19 +308,3 @@ public class DroidMix extends Activity implements OnClickListener
         System.loadLibrary("rtcmix");
     }
 }
-
-/*
-    public void onRunButtonClick(View view)
-    {
-	toggleButton = !toggleButton;
-	
-	// Ensure scroll to end of text
-	scroller.post(new Runnable() {
-		public void run() {
-		    scroller.fullScroll(ScrollView.FOCUS_DOWN);
-		}
-	    });
-    }
-        
-}
-*/

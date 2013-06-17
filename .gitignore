@@ -6,3 +6,4 @@
 *.log
 *.apk
 *.dex
+*.keystore
