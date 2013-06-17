@@ -33,6 +33,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ScrollView;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.text.method.ScrollingMovementMethod;
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -41,13 +43,14 @@ import android.widget.Toast;
 //import java.util.Random;
 import ar.com.daidalos.afiledialog.*;
 
-public class DroidMix extends Activity implements OnClickListener
+public class DroidMix extends Activity implements OnClickListener, OnSeekBarChangeListener
 {
     AudioSynthesisTask audio;
     //private Handler mHandler = new Handler();
     TextView outputText = null;
     ScrollView scroller = null;
     Button sampleSound, loadSound;
+    SeekBar pfSeekBar;
     boolean isRunning = false;
     boolean scorefileLoaded = false;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
@@ -62,6 +65,8 @@ public class DroidMix extends Activity implements OnClickListener
 
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	loadSound = (Button) this.findViewById(R.id.LoadSound);
+	pfSeekBar = (SeekBar) findViewById(R.id.PField);
+	pfSeekBar.setOnSeekBarChangeListener(this);
 	sampleSound.setOnClickListener(this);
 	loadSound.setOnClickListener(this);
 	//sampleSound.setEnabled(false);
@@ -87,44 +92,35 @@ public class DroidMix extends Activity implements OnClickListener
     {
 	super.onPause();
 	isRunning = false;
-
-	//endSound.setEnabled(false);
-	//sampleSound.setEnabled(false);
-	//loadSound.setEnabled(false);
-	//startSound.setEnabled(true);
     }
+
+
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser)
+    {
+        //Toast.makeText(DroidMix.this, "Seekbar Value : " + progress, Toast.LENGTH_SHORT).show();
+		rtcmix.pfield_set(1,progress*5+200);
+    }
+    
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar)
+    {
+        //Toast.makeText(DroidMix.this, "Started Tracking Seekbar", Toast.LENGTH_SHORT).show();
+    }
+    
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar)
+    {
+        pfSeekBar.setSecondaryProgress(seekBar.getProgress());
+        //Toast.makeText(DroidMix.this, "Stopped Tracking Seekbar", Toast.LENGTH_SHORT).show();
+    }
+
+
 
     public void onClick (View v)
     {
-	/*
-	if (v == startSound)
-	    {
-		startSound.setEnabled(false);
-		endSound.setEnabled(true);
-		sampleSound.setEnabled(true);
-		loadSound.setEnabled(true);
-		//Toast.makeText(getApplicationContext(),
-		//	       "Starting RTcmix...", Toast.LENGTH_SHORT).show();
-		isRunning = true;
-		/*mHandler.postDelayed(new Runnable()
-		    {
-			public void run()
-			{
-			    endSound.setEnabled(true);
-			    sampleSound.setEnabled(true);
-			    loadSound.setEnabled(true);
-			}
-			}, 5000);
-	    }
-	else if (v == endSound)
-	    {
-		isRunning = false;
-		endSound.setEnabled(false);
-		sampleSound.setEnabled(false);
-		loadSound.setEnabled(false);
-		startSound.setEnabled(true);
-	    }
-	else*/ if (v == sampleSound)
+	if (v == sampleSound)
 	    {
 		if (rtcmix.parse_score(testcode,codelen) == 0)
 		    {
