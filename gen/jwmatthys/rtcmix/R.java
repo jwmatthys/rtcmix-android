@@ -27,6 +27,7 @@ public final class R {
         public static final int tick=0x7f020007;
     }
     public static final class id {
+        public static final int FlushSound=0x7f07000f;
         public static final int LoadSound=0x7f07000b;
         public static final int OutputText=0x7f07000e;
         public static final int PField=0x7f07000c;

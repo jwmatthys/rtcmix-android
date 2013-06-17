@@ -8,6 +8,7 @@ int drawable ic_launcher 0x7f020004
 int drawable no 0x7f020005
 int drawable rtcmixicon 0x7f020006
 int drawable tick 0x7f020007
+int id FlushSound 0x7f07000f
 int id LoadSound 0x7f07000b
 int id OutputText 0x7f07000e
 int id PField 0x7f07000c

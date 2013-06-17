@@ -52,10 +52,11 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     //private Handler mHandler = new Handler();
     TextView outputText = null;
     ScrollView scroller = null;
-    private Button startSound, sampleSound, loadSound;
+    private Button startSound, sampleSound, loadSound, flushSound;
     private SeekBar pfSeekBar;
     Spinner sampleRateSpinner;
     boolean isRunning = false;
+    boolean flushFlag = false;
     boolean scorefileLoaded = false;
     int chosen_samplerate = 8000;
     final String testcode = "env=maketable(\"window\",1000,1); for (i=0; i<120; i+=1) { WAVETABLE(i*0.5,2,15000*env,110*irand(2,7),random())}";
@@ -71,16 +72,18 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 	sampleRateSpinner = (Spinner) findViewById(R.id.PickSR);
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	loadSound = (Button) this.findViewById(R.id.LoadSound);
+	flushSound = (Button) this.findViewById(R.id.FlushSound);
 	pfSeekBar = (SeekBar) findViewById(R.id.PField);
 	pfSeekBar.setOnSeekBarChangeListener(this);
 	startSound.setOnClickListener(this);
 	sampleSound.setOnClickListener(this);
 	loadSound.setOnClickListener(this);
+	flushSound.setOnClickListener(this);
 	sampleRateSpinner.setSelection(1);
 	sampleRateSpinner.setOnItemSelectedListener(this);
 	sampleSound.setEnabled(false);
 	loadSound.setEnabled(false);
-
+	flushSound.setEnabled(false);
 
         outputText = (TextView)findViewById(R.id.OutputText);
         //outputText.setText("Press Start to initialize sound.\n");
@@ -144,7 +147,8 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 		audio.execute();
 		sampleSound.setEnabled(true);
 		loadSound.setEnabled(true);
-	    }		
+		flushSound.setEnabled(true);
+	    }	
 
        	if (v == sampleSound)
 	    {
@@ -169,8 +173,12 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     		// Show the dialog.
 		dialog.show();
 	
-		//Toast.makeText(getApplicationContext(),
-		//"Load RTcmix scorefile (unimplemented)", Toast.LENGTH_SHORT).show();
+	    }
+	else if (v == flushSound)
+	    {
+		flushFlag = true;
+		Toast.makeText(getApplicationContext(),
+			       "Flushing all audio buffers", Toast.LENGTH_SHORT).show();
 	    }
     }
     
@@ -302,7 +310,15 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
 			    for (int i=0; i < buffsize; i++)
 				{
 				    if (i % OUTBUFSIZE == 0)
-					outbuf = rtcmix.pullTraverse(inbuf);
+					{
+					    outbuf = rtcmix.pullTraverse(inbuf);
+					    if (flushFlag)
+						{
+						    rtcmix.flush_sched();
+						    flushFlag = false;
+						    scorefileLoaded = false;
+						}
+					}
 				    samples[i] = (short) (outbuf[i % OUTBUFSIZE]*MAX_AMP);
 				}
 			    audioTrack.write(samples, 0, buffsize);

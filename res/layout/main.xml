@@ -59,4 +59,12 @@
 	android:layout_height="wrap_content"
 	/>
   </ScrollView>
+  <Button
+      android:id="@+id/FlushSound"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true"
+      android:text="Flush"
+      />      
 </RelativeLayout>

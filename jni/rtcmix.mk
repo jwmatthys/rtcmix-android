@@ -264,8 +264,7 @@ src/rtcmix/RTcmixMain.cpp \
 src/rtcmix/main.cpp \
 src/parser/parse_with_minc.c \
 rtcmix_wrap.c \
-native-audio-jni.c \
-debug.h
+native-audio-jni.c
 
 LOCAL_LDLIBS    := -lOpenSLES
 # for native asset manager

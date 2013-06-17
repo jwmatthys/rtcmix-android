@@ -21,7 +21,6 @@
   extern void pfield_set(int inlet, float pval);
   extern void buffer_set(char *bufname, float *bufstart, int nframes, int nchans, int modtime);
   extern void flush_sched();
-  extern void flush();
 %}
 
 %pointer_functions(float, floatp);
