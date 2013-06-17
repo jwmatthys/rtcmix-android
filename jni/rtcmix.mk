@@ -264,10 +264,12 @@ src/rtcmix/RTcmixMain.cpp \
 src/rtcmix/main.cpp \
 src/parser/parse_with_minc.c \
 rtcmix_wrap.c \
-native-audio-jni.c # OpenSLES code
+native-audio-jni.c \
+debug.h
 
 LOCAL_LDLIBS    := -lOpenSLES
 # for native asset manager
 LOCAL_LDLIBS    += -landroid
+LOCAL_LDLIBS    += -llog
 
 include $(BUILD_SHARED_LIBRARY)
