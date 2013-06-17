@@ -11,10 +11,10 @@ int drawable tick 0x7f020007
 int id LoadSound 0x7f07000b
 int id OutputText 0x7f07000e
 int id PField 0x7f07000c
-int id PickSR 0x7f070008
+int id PickSR 0x7f070009
 int id SampleSound 0x7f07000a
 int id Scroller 0x7f07000d
-int id StartSound 0x7f070009
+int id StartSound 0x7f070008
 int id buttonAdd 0x7f070004
 int id buttonOk 0x7f070005
 int id imageViewIcon 0x7f070006

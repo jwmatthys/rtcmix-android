@@ -67,9 +67,8 @@ public class DroidMix extends Activity implements OnClickListener, OnSeekBarChan
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-	sampleRateSpinner = (Spinner) findViewById(R.id.PickSR);
 	startSound = (Button) this.findViewById(R.id.StartSound);
+	sampleRateSpinner = (Spinner) findViewById(R.id.PickSR);
 	sampleSound = (Button) this.findViewById(R.id.SampleSound);
 	loadSound = (Button) this.findViewById(R.id.LoadSound);
 	pfSeekBar = (SeekBar) findViewById(R.id.PField);

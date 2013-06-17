@@ -30,10 +30,10 @@ public final class R {
         public static final int LoadSound=0x7f07000b;
         public static final int OutputText=0x7f07000e;
         public static final int PField=0x7f07000c;
-        public static final int PickSR=0x7f070008;
+        public static final int PickSR=0x7f070009;
         public static final int SampleSound=0x7f07000a;
         public static final int Scroller=0x7f07000d;
-        public static final int StartSound=0x7f070009;
+        public static final int StartSound=0x7f070008;
         public static final int buttonAdd=0x7f070004;
         public static final int buttonOk=0x7f070005;
         public static final int imageViewIcon=0x7f070006;

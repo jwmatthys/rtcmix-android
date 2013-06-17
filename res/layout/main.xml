@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
     >
+  <Button
+      android:id="@+id/StartSound"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_weight="2"
+      android:text="Start DSP"  
+      />
   <Spinner
       android:id="@+id/PickSR"
-      android:layout_width="match_parent"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_weight="3"
+      android:layout_toRightOf="@+id/StartSound"
+      android:layout_alignParentRight="true"
       android:entries="@array/sample_rates"
       android:prompt="@string/sr_prompt"
       />
   <Button
-      android:id="@+id/StartSound"
-      android:layout_width="wrap_content"  
-      android:layout_height="wrap_content"  
-      android:text="Start DSP"  
-      />
-  <Button
       android:id="@+id/SampleSound"
       android:layout_width="wrap_content"  
-      android:layout_height="wrap_content"  
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/StartSound"
+      android:layout_alignParentRight="true"
       android:text="Play RTcmix Sample"  
       />
   <Button
       android:id="@+id/LoadSound"
       android:layout_width="wrap_content"  
       android:layout_height="wrap_content"  
+      android:layout_below="@+id/StartSound"
+      android:layout_toLeftOf="@+id/SampleSound"
+      android:layout_alignParentLeft="true"
       android:text="Load RTcmix Scorefile"  
       />
   <SeekBar
       android:id="@+id/PField"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
+      android:layout_below="@+id/LoadSound"
       android:max="100"
-      android:progress="10" />
+      android:progress="50" />
   <ScrollView
       android:id="@+id/Scroller"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
+      android:layout_below="@+id/PField"
       >
     <TextView
 	android:id="@+id/OutputText"
@@ -46,4 +59,4 @@
 	android:layout_height="wrap_content"
 	/>
   </ScrollView>
-</LinearLayout>
+</RelativeLayout>
